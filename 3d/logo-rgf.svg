@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Foglia del marchio RGF ambiente, stesso path dell'SVG del sito.
+       L'anello non sta qui: in Blender l'importatore SVG porta dentro i
+       riempimenti ma non i contorni, quindi la corona si costruisce a parte. -->
+  <path d="M32 14 C22 24 20 34 32 50 C44 34 42 24 32 14 Z" fill="#000000"/>
+</svg>

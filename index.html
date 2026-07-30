@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RGF Servizi Ambientali — Smaltimento rifiuti | Caravaggio</title>
+  <meta name="description" content="Smaltimento, stoccaggio, trasporto e analisi di rifiuti speciali pericolosi e non pericolosi. Impianto AIA a Caravaggio (BG). ISO 9001 e ISO 14001.">
+  <link rel="canonical" href="https://rgfambiente.it/">
+  <meta name="theme-color" content="#070b09">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="RGF Servizi Ambientali">
+  <meta property="og:title" content="RGF Servizi Ambientali — Gestione e smaltimento rifiuti speciali">
+  <meta property="og:description" content="Dal 1991: stoccaggio, trasporto, analisi e smaltimento di rifiuti pericolosi e non pericolosi. Impianto AIA di 7.000 m² a Caravaggio (BG). ISO 9001 e ISO 14001.">
+  <meta property="og:url" content="https://rgfambiente.it/">
+  <meta property="og:image" content="https://rgfambiente.it/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RGF Servizi Ambientali — Gestione e smaltimento rifiuti speciali">
+  <meta name="twitter:description" content="Dal 1991: stoccaggio, trasporto, analisi e smaltimento di rifiuti pericolosi e non pericolosi a Caravaggio (BG).">
+  <meta name="twitter:image" content="https://rgfambiente.it/assets/og.jpg">
+
+  <!-- Dati strutturati -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "RGF S.r.l. Servizi Ambientali",
+    "description": "Gestione integrata dei rifiuti speciali: stoccaggio autorizzato AIA, trasporto, analisi chimiche, smaltimento e recupero di rifiuti pericolosi e non pericolosi.",
+    "url": "https://rgfambiente.it/",
+    "telephone": "+39 0363 52037",
+    "email": "info@rgfambiente.it",
+    "vatID": "IT02079720161",
+    "foundingDate": "1991",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Leonardo da Vinci, 161",
+      "postalCode": "24043",
+      "addressLocality": "Caravaggio",
+      "addressRegion": "BG",
+      "addressCountry": "IT"
+    },
+    "image": "https://rgfambiente.it/assets/og.jpg",
+    "priceRange": "$$"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <!-- Archivo in asse largo per i titoli: ha la proporzione della targa e
+       della segnaletica industriale. Manrope per il corpo. Sora+Inter erano
+       l'accoppiata più battuta dei siti generati, e si vedeva. -->
+  <link rel="stylesheet" media="print" onload="this.media='all'"
+        href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Manrope:wght@400..800&family=JetBrains+Mono:wght@400;500&display=swap">
+  <noscript><link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Manrope:wght@400..800&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Le animazioni di comparsa nascondono i contenuti: attivarle solo se JS è
+       disponibile, così senza JS la pagina resta interamente leggibile. -->
+  <script>document.documentElement.classList.add("js-anim");</script>
+
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#top">Salta al contenuto principale</a>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <svg class="preloader__logo" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+        <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="2" class="preloader__ring"/>
+        <path d="M32 14 C22 24 20 34 32 50 C44 34 42 24 32 14 Z" fill="currentColor" class="preloader__leaf"/>
+      </svg>
+      <div class="preloader__bar"><span id="preloaderBar"></span></div>
+    </div>
+  </div>
+
+  <!-- ============ SCROLL PROGRESS ============ -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" aria-label="RGF Servizi Ambientali — Home">
+        <svg class="nav__logo" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="3"/>
+          <path d="M32 14 C22 24 20 34 32 50 C44 34 42 24 32 14 Z" fill="currentColor"/>
+        </svg>
+        <span class="nav__name">RGF<em>ambiente</em></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Navigazione principale">
+        <a href="#gruppo" class="nav__link">Il Gruppo</a>
+        <a href="#servizi" class="nav__link">Servizi</a>
+        <a href="#processo" class="nav__link">Come lavoriamo</a>
+        <a href="#sostenibilita" class="nav__link">Sostenibilità</a>
+        <a href="#cer" class="nav__link">Codici EER</a>
+        <a href="#contatti" class="nav__cta">Richiedete un preventivo</a>
+      </nav>
+
+      <button class="nav__burger" id="navBurger" aria-label="Apri menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top" tabindex="-1">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <canvas id="heroCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__vignette" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal-hero"><span class="dot"></span> Dal 1991<span class="solo-largo"> — Servizi Ambientali</span> · Caravaggio (BG)</p>
+        <h1 class="hero__title">
+          <span class="hero__line"><span>L’ambiente</span></span>
+          <span class="hero__line"><span>è una cosa <em>seria</em>.</span></span>
+        </h1>
+        <p class="hero__sub reveal-hero">Stoccaggio, trasporto, analisi e smaltimento di rifiuti speciali pericolosi e non pericolosi.
+          Un impianto autorizzato AIA di 7.000 m², un gruppo di quattro società, certificazioni ISO&nbsp;9001 e ISO&nbsp;14001.</p>
+        <div class="hero__actions reveal-hero">
+          <a href="#servizi" class="btn btn--primary" data-magnetic>Scoprite i servizi</a>
+          <a href="#contatti" class="btn btn--ghost" data-magnetic>Parlate con noi</a>
+        </div>
+      </div>
+
+      <a href="#trust" class="hero__scrollcue" aria-label="Continua la lettura">
+        <span class="hero__mouse"><span></span></span>
+        <span class="hero__scrolltext">continua</span>
+      </a>
+    </section>
+
+    <!-- ============ TRUST MARQUEE ============ -->
+    <section class="trust" id="trust" aria-label="Certificazioni e garanzie">
+      <div class="marquee" data-marquee aria-hidden="true">
+        <div class="marquee__track">
+          <span class="marquee__item">UNI EN ISO 9001:2015 — Qualità</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">UNI EN ISO 14001:2015 — Ambiente</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Albo Gestori Ambientali MI01055</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Impianto autorizzato AIA</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Energia autoprodotta da fotovoltaico</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Rifiuti pericolosi e non pericolosi</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Dal 1991 al servizio delle imprese</span><span class="marquee__sep">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ IL GRUPPO ============ -->
+    <section class="section gruppo" id="gruppo">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">01 — Il Gruppo</p>
+          <h2 class="section__title">Un partner unico per l’intero <span class="grad">ciclo del rifiuto</span></h2>
+        </div>
+
+        <div class="gruppo__grid">
+          <div class="gruppo__text reveal">
+            <p class="lead">La società nasce nel 1991 come broker nello smaltimento dei rifiuti.
+              Nel 1997 ottiene la prima Autorizzazione Regionale per l’attività di stoccaggio
+              di rifiuti speciali e tossico-nocivi.</p>
+            <p>Oggi l’impianto si sviluppa su una superficie di 7.000 m² e la società è autorizzata,
+              con provvedimento AIA, all’esercizio di un impianto di deposito preliminare con raggruppamento,
+              ricondizionamento e recupero di rifiuti pericolosi e non pericolosi. Tutte le aree di deposito
+              e trattamento sono dotate di efficienti impianti di prevenzione dell’inquinamento.</p>
+            <ul class="gruppo__points">
+              <li><strong>Autorizzazione AIA</strong> — deposito preliminare, raggruppamento, ricondizionamento e recupero</li>
+              <li><strong>Albo Gestori Ambientali MI01055</strong> — categorie 1F, 4E, 5F, 8C e 9C</li>
+              <li><strong>Moderni sistemi di lavorazione</strong> e stoccaggio con prevenzione dell’inquinamento</li>
+            </ul>
+          </div>
+
+          <div class="gruppo__stats">
+            <div class="stat glass reveal" data-tilt>
+              <span class="stat__num" data-count="1991" data-from="1900">1900</span>
+              <span class="stat__label">Anno di fondazione<br>35 anni di esperienza</span>
+            </div>
+            <div class="stat glass reveal" data-tilt>
+              <span class="stat__num" data-count="7000" data-format="it" data-suffix=" m²">0</span>
+              <span class="stat__label">Superficie dell’impianto<br>autorizzato AIA</span>
+            </div>
+            <div class="stat glass reveal" data-tilt>
+              <span class="stat__num" data-count="4">0</span>
+              <span class="stat__label">Società del gruppo<br>una filiera completa</span>
+            </div>
+            <div class="stat glass reveal" data-tilt>
+              <span class="stat__num" data-count="5">0</span>
+              <span class="stat__label">Categorie di iscrizione<br>Albo Gestori Ambientali</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="aziende__head reveal">Le quattro società del gruppo</h3>
+        <div class="aziende">
+          <article class="azienda glass reveal" data-tilt>
+            <span class="azienda__tag">Impianto &amp; gestione</span>
+            <h3>RGF S.r.l.</h3>
+            <p>Cuore del gruppo: impianto autorizzato AIA per stoccaggio, ricondizionamento
+               e recupero di rifiuti pericolosi e non pericolosi su 7.000 m² a Caravaggio.</p>
+          </article>
+          <article class="azienda glass reveal" data-tilt>
+            <span class="azienda__tag">Laboratorio analisi</span>
+            <h3>O.R.S.A. S.r.l.</h3>
+            <p>Costituita nel 2009, dispone di un moderno laboratorio di analisi chimiche
+               con strumentazioni di ultima generazione. Intermediazione rifiuti — Albo Cat. 8.</p>
+          </article>
+          <article class="azienda glass reveal" data-tilt>
+            <span class="azienda__tag">Trasporti</span>
+            <h3>Facchetti Fabio S.r.l.</h3>
+            <p>Specializzata nel trasporto di rifiuti pericolosi e non pericolosi, con sede
+               operativa presso l’impianto RGF per una logistica ottimizzata.</p>
+            <a href="https://www.facchettifabio.it" target="_blank" rel="noopener" class="azienda__link">facchettifabio.it ↗</a>
+          </article>
+          <article class="azienda glass reveal" data-tilt>
+            <span class="azienda__tag">Depurazione</span>
+            <h3>S.E.B. S.r.l.</h3>
+            <p>Impianto AIA di depurazione chimico-fisica e biologica conto terzi, con linea
+               semiautomatica di triturazione per la distruzione — anche fiscale — di prodotti alimentari.</p>
+            <a href="https://www.seb-srl.it" target="_blank" rel="noopener" class="azienda__link">seb-srl.it ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVIZI ============ -->
+    <section class="section servizi" id="servizi">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">02 — Servizi</p>
+          <h2 class="section__title">Tutto ciò che serve, <span class="grad">in un unico impianto</span></h2>
+        </div>
+
+        <div class="servizi__grid" id="serviziGrid">
+
+          <article class="card glass reveal" data-tilt>
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+            </div>
+            <h3 class="card__title">Smaltimento &amp; recupero</h3>
+            <p class="card__text">Smaltimento e avvio a recupero di rifiuti speciali pericolosi e non pericolosi,
+              con tracciabilità completa e documentazione a norma di legge.</p>
+            <span class="card__auth">AIA</span>
+          </article>
+
+          <article class="card glass reveal" data-tilt>
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="M3.3 7 12 12l8.7-5"/><path d="M12 22V12"/></svg>
+            </div>
+            <h3 class="card__title">Stoccaggio autorizzato</h3>
+            <p class="card__text">Deposito preliminare con raggruppamento e ricondizionamento in impianto AIA
+              da 7.000 m², con moderni sistemi di prevenzione dell’inquinamento.</p>
+            <span class="card__auth">AIA</span>
+          </article>
+
+          <article class="card glass reveal" data-tilt>
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h1"/><path d="M14 9h4l4 4v4a1 1 0 0 1-1 1h-1"/><circle cx="6.5" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/><path d="M8.5 18h6.5"/></svg>
+            </div>
+            <h3 class="card__title">Trasporto rifiuti</h3>
+            <p class="card__text">Ampia flotta di automezzi autorizzati al trasporto di rifiuti pericolosi
+              e non pericolosi, con ritiro presso il cliente in tutta sicurezza.</p>
+            <span class="card__auth">ALBO 4E &middot; 5F</span>
+          </article>
+
+          <article class="card glass reveal" data-tilt>
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31"/><path d="M14 9.3V2"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><path d="M5.5 16h13"/></svg>
+            </div>
+            <h3 class="card__title">Analisi chimiche</h3>
+            <p class="card__text">Laboratorio O.R.S.A. con strumentazioni di ultima generazione per la
+              caratterizzazione dei rifiuti e l’attribuzione corretta del codice EER.</p>
+            <span class="card__auth">O.R.S.A.</span>
+          </article>
+
+          <article class="card glass reveal" data-tilt>
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="14" height="12" rx="1"/><path d="M16 11h3l3 3v5h-6"/><path d="M6 7V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"/></svg>
+            </div>
+            <h3 class="card__title">Noleggio cassoni</h3>
+            <p class="card__text">Cassoni e contenitori adeguati allo stoccaggio dei diversi rifiuti,
+              per organizzare il deposito temporaneo direttamente in azienda.</p>
+            
+          </article>
+
+          <article class="card glass reveal" data-tilt>
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="7" rx="1"/><path d="M5 10v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10"/><path d="M9 14l6 4M15 14l-6 4"/></svg>
+            </div>
+            <h3 class="card__title">Distruzione certificata</h3>
+            <p class="card__text">Linea semiautomatica di triturazione per la distruzione — anche fiscale —
+              di prodotti alimentari non più commercializzabili, con videoregistrazione.</p>
+            <span class="card__auth">S.E.B.</span>
+          </article>
+
+          <article class="card glass reveal" data-tilt>
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10z"/><path d="M9.5 12l2 2 3.5-4"/></svg>
+            </div>
+            <h3 class="card__title">Bonifiche</h3>
+            <p class="card__text">Interventi di bonifica di siti e ambienti, con iscrizione all’Albo
+              Gestori Ambientali categoria 9C e personale specializzato.</p>
+            <span class="card__auth">ALBO 9C</span>
+          </article>
+
+          <article class="card glass reveal" data-tilt>
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 7.5l7 3M8.7 16.2l6.6-3M6 9v6M18 9v6"/></svg>
+            </div>
+            <h3 class="card__title">Intermediazione</h3>
+            <p class="card__text">Intermediazione nello smaltimento e recupero dei rifiuti — Albo Gestori
+              Ambientali categoria 8C — per individuare sempre il destino più idoneo.</p>
+            <span class="card__auth">ALBO 8C</span>
+          </article>
+
+          <article class="card glass reveal" data-tilt>
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16.3c2.2 0 4-1.8 4-4 0-2.5-4-7.3-4-7.3S3 9.8 3 12.3c0 2.2 1.8 4 4 4z"/><path d="M16.5 21c2.5 0 4.5-2 4.5-4.5 0-2.8-4.5-8.5-4.5-8.5S12 13.7 12 16.5c0 2.5 2 4.5 4.5 4.5z"/></svg>
+            </div>
+            <h3 class="card__title">Igienizzazione</h3>
+            <p class="card__text">Servizi di pulizia, igienizzazione e bonifica di ambienti civili e
+              lavorativi, con attrezzature moderne e personale specializzato.</p>
+            
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESSO ============ -->
+    <section class="section processo" id="processo">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">03 — Come lavoriamo</p>
+          <h2 class="section__title">Dall’analisi allo smaltimento, <span class="grad">tutto tracciato</span></h2>
+        </div>
+
+        <div class="timeline" id="timeline">
+          <div class="timeline__rail" aria-hidden="true"><span id="timelineFill"></span></div>
+
+          <div class="tstep reveal">
+            <div class="tstep__marker"><span>1</span></div>
+            <div class="tstep__body glass">
+              <h3>Analisi &amp; classificazione</h3>
+              <p>Analizziamo il rifiuto, ne determiniamo la composizione e attribuiamo il corretto codice EER.
+                 Ogni percorso di smaltimento parte da una classificazione rigorosa.</p>
+            </div>
+          </div>
+
+          <div class="tstep reveal">
+            <div class="tstep__marker"><span>2</span></div>
+            <div class="tstep__body glass">
+              <h3>Preventivo &amp; pianificazione</h3>
+              <p>Definiamo modalità di raccolta, attrezzature necessarie e frequenza dei ritiri,
+                 con un preventivo chiaro e senza sorprese.</p>
+            </div>
+          </div>
+
+          <div class="tstep reveal">
+            <div class="tstep__marker"><span>3</span></div>
+            <div class="tstep__body glass">
+              <h3>Ritiro &amp; trasporto</h3>
+              <p>I nostri mezzi autorizzati ritirano il rifiuto presso la vostra sede,
+                 con formulario di identificazione e piena conformità ADR ove richiesto.</p>
+            </div>
+          </div>
+
+          <div class="tstep reveal">
+            <div class="tstep__marker"><span>4</span></div>
+            <div class="tstep__body glass">
+              <h3>Stoccaggio &amp; destino finale</h3>
+              <p>Il rifiuto viene stoccato nel nostro impianto autorizzato e avviato a recupero
+                 o smaltimento presso impianti finali selezionati e certificati.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOSTENIBILITÀ ============ -->
+    <section class="section sostenibilita" id="sostenibilita">
+      <div class="sostenibilita__bg" aria-hidden="true">
+        <div class="sun" id="sun"></div>
+      </div>
+      <div class="container">
+        <div class="sostenibilita__grid">
+          <div class="reveal">
+            <p class="section__eyebrow">04 — Sostenibilità</p>
+            <h2 class="section__title">Energia pulita per un <span class="grad">lavoro pulito</span></h2>
+            <p class="lead">Il nostro impianto è alimentato da un moderno sistema fotovoltaico
+              che ci rende autosufficienti dal punto di vista energetico.</p>
+            <p>Chi si occupa di ambiente deve dare l’esempio: per questo abbiamo investito
+              nell’autoproduzione di energia elettrica rinnovabile, riducendo le emissioni di CO₂
+              legate alla nostra attività quotidiana.</p>
+            <div class="sostenibilita__badges">
+              <span class="badge">☀️ Impianto fotovoltaico di proprietà</span>
+              <span class="badge">⚡ Autosufficienza energetica</span>
+              <span class="badge">🌱 Riduzione emissioni CO₂</span>
+            </div>
+          </div>
+          <div class="sostenibilita__visual reveal" aria-hidden="true">
+            <div class="energy-card glass" data-tilt>
+              <div class="energy-card__panel">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="energy-card__flow">
+                <svg viewBox="0 0 200 60" fill="none">
+                  <path id="flowPath" d="M10 30 C 60 5, 140 55, 190 30" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 6"/>
+                </svg>
+                <span class="energy-card__bolt">⚡</span>
+              </div>
+              <p class="energy-card__label">Fotovoltaico → Impianto RGF<br><strong>100% autoproduzione</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CODICI CER ============ -->
+    <section class="section cer" id="cer">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">05 — Strumenti</p>
+          <h2 class="section__title">Ricerca <span class="grad">Codici EER</span> (ex CER)</h2>
+          <p class="section__desc">Cercate nell’Elenco Europeo dei Rifiuti per codice o parola chiave.
+            I codici contrassegnati con asterisco (*) identificano rifiuti pericolosi.</p>
+        </div>
+
+        <div class="cer__tool glass reveal">
+          <div class="cer__searchbar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="search" id="cerInput" placeholder="Es. 15 01 06, olio, imballaggi, toner…" aria-label="Cerca un codice EER per numero o parola chiave">
+            <button class="cer__clear" id="cerClear" aria-label="Pulisci ricerca">×</button>
+          </div>
+          <div class="cer__bar">
+            <div class="cer__filters" role="group" aria-label="Filtra per pericolosità">
+              <button class="chip is-active" data-filter="all" aria-pressed="true">Tutti</button>
+              <button class="chip" data-filter="p" aria-pressed="false">Pericolosi *</button>
+              <button class="chip" data-filter="np" aria-pressed="false">Non pericolosi</button>
+            </div>
+            <p class="cer__count" id="cerCount" role="status" aria-live="polite"></p>
+          </div>
+          <div class="cer__results" id="cerResults"></div>
+          <p class="cer__note">Elenco fornito a solo scopo informativo. Per la classificazione ufficiale del vostro
+            rifiuto <a href="#contatti">contattate i nostri tecnici</a>: l’attribuzione del codice corretto
+            richiede spesso un’analisi di laboratorio.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DOCUMENTI ============ -->
+    <section class="section documenti" id="documenti">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">06 — Trasparenza</p>
+          <h2 class="section__title">Documenti, autorizzazioni e <span class="grad">certificazioni</span></h2>
+          <p class="section__desc">Lavorare con noi significa lavorare con un partner in regola.
+            Tutti i nostri documenti ufficiali sono consultabili liberamente.</p>
+        </div>
+
+        <div class="docs reveal">
+          <a class="doc glass" href="https://rgfambiente.it/wp-content/uploads/2026/03/DD-11-DEL-8-1-26-AIA.pdf" target="_blank" rel="noopener">
+            <span class="doc__ico" aria-hidden="true">📜</span>
+            <span class="doc__body"><strong>Autorizzazione AIA</strong><span>DD11 dell'08/01/2026 — esercizio impianto</span></span>
+            <span class="doc__ext" aria-hidden="true">PDF ↗</span>
+          </a>
+          <a class="doc glass" href="https://rgfambiente.it/wp-content/uploads/2024/01/5331_240109_UN.pdf" target="_blank" rel="noopener">
+            <span class="doc__ico" aria-hidden="true">✅</span>
+            <span class="doc__body"><strong>UNI EN ISO 9001:2015</strong><span>Certificato n. 5331 — Sistema Qualità</span></span>
+            <span class="doc__ext" aria-hidden="true">PDF ↗</span>
+          </a>
+          <a class="doc glass" href="https://rgfambiente.it/wp-content/uploads/2024/01/17019_240109_UN.pdf" target="_blank" rel="noopener">
+            <span class="doc__ico" aria-hidden="true">🌿</span>
+            <span class="doc__body"><strong>UNI EN ISO 14001:2015</strong><span>Certificato n. 17019 — Gestione Ambientale</span></span>
+            <span class="doc__ext" aria-hidden="true">PDF ↗</span>
+          </a>
+          <a class="doc glass" href="https://rgfambiente.it/wp-content/uploads/2025/01/All.-n1-Politica-Ambiente-Qualita-003.pdf" target="_blank" rel="noopener">
+            <span class="doc__ico" aria-hidden="true">📋</span>
+            <span class="doc__body"><strong>Politica Integrata</strong><span>Ambiente e Qualità</span></span>
+            <span class="doc__ext" aria-hidden="true">PDF ↗</span>
+          </a>
+          <a class="doc glass" href="https://rgfambiente.it/wp-content/uploads/2019/06/R.G.F.-Informativa-Clienti_Fornitori-GDPR-1.pdf" target="_blank" rel="noopener">
+            <span class="doc__ico" aria-hidden="true">🔒</span>
+            <span class="doc__body"><strong>Informativa Privacy</strong><span>Clienti e fornitori — Reg. UE 2016/679</span></span>
+            <span class="doc__ext" aria-hidden="true">PDF ↗</span>
+          </a>
+          <div class="doc doc--multi glass">
+            <span class="doc__ico" aria-hidden="true">🏛️</span>
+            <span class="doc__body"><strong>Albo Gestori Ambientali — MI01055</strong>
+              <span class="doc__cats">
+                <a href="https://rgfambiente.it/wp-content/uploads/2025/02/MI01055_PR_2020_40689.pdf" target="_blank" rel="noopener">Cat. 1F</a>
+                <a href="https://rgfambiente.it/wp-content/uploads/2024/09/RGF_cat_4_MI01055_04_10_2024.pdf" target="_blank" rel="noopener">Cat. 4E</a>
+                <a href="https://rgfambiente.it/wp-content/uploads/2024/09/RGF_cat_5_MI01055_18_09_2024.pdf" target="_blank" rel="noopener">Cat. 5F</a>
+                <a href="https://rgfambiente.it/wp-content/uploads/2022/04/ISCRIZIONE_ALBO_CAT.8CIntermediazione_2022.pdf" target="_blank" rel="noopener">Cat. 8C</a>
+                <a href="https://rgfambiente.it/wp-content/uploads/2026/01/ISCRIZIONE-ALBO-CAT.-9C-Bonifiche-2030.pdf" target="_blank" rel="noopener">Cat. 9C</a>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BANNER ============ -->
+    <section class="ctaband">
+      <div class="container ctaband__inner reveal">
+        <h2>Avete un rifiuto da smaltire e non sapete da dove iniziare?</h2>
+        <p>Vi guidiamo noi: classificazione, ritiro, trasporto e smaltimento. Un solo interlocutore.</p>
+        <a href="#contatti" class="btn btn--primary btn--lg" data-magnetic>Richiedete un preventivo gratuito</a>
+      </div>
+    </section>
+
+    <!-- ============ CONTATTI ============ -->
+    <section class="section contatti" id="contatti">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">07 — Contatti</p>
+          <h2 class="section__title">Parliamo del vostro <span class="grad">progetto</span></h2>
+        </div>
+
+        <div class="contatti__grid">
+          <div class="contatti__info reveal">
+            <div class="infocard glass">
+              <h3>RGF S.r.l. — Servizi Ambientali</h3>
+              <ul class="infolist">
+                <li>
+                  <span class="infolist__ico" aria-hidden="true">📍</span>
+                  <span>Via Leonardo da Vinci, 161<br>24043 Caravaggio (BG)</span>
+                </li>
+                <li>
+                  <span class="infolist__ico" aria-hidden="true">📞</span>
+                  <span><a href="tel:+39036352037">0363 52037</a> — Fax 0363 52499</span>
+                </li>
+                <li>
+                  <span class="infolist__ico" aria-hidden="true">✉️</span>
+                  <span><a href="mailto:info@rgfambiente.it">info@rgfambiente.it</a></span>
+                </li>
+                <li>
+                  <span class="infolist__ico" aria-hidden="true">🏢</span>
+                  <span>P.IVA 02079720161</span>
+                </li>
+              </ul>
+              <a class="btn btn--ghost btn--sm" href="https://www.google.com/maps/search/?api=1&amp;query=Via+Leonardo+da+Vinci+161+Caravaggio+BG" target="_blank" rel="noopener">Aprite in Google Maps ↗</a>
+            </div>
+
+            <div class="infocard glass infocard--work">
+              <h3>Lavora con noi</h3>
+              <p>Il gruppo RGF è sempre alla ricerca di nuove figure professionali.
+                Inviateci la vostra candidatura:
+                <a href="mailto:info@rgfambiente.it?subject=Candidatura">info@rgfambiente.it</a></p>
+            </div>
+          </div>
+
+          <form class="form glass reveal" id="contactForm" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <input type="text" id="fNome" name="nome" required placeholder=" ">
+                <label for="fNome">Nome e cognome *</label>
+              </div>
+              <div class="field">
+                <input type="text" id="fAzienda" name="azienda" placeholder=" ">
+                <label for="fAzienda">Azienda</label>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <input type="email" id="fEmail" name="email" required placeholder=" ">
+                <label for="fEmail">Email *</label>
+              </div>
+              <div class="field">
+                <input type="tel" id="fTel" name="telefono" placeholder=" ">
+                <label for="fTel">Telefono</label>
+              </div>
+            </div>
+            <div class="field">
+              <select id="fServizio" name="servizio" aria-label="Servizio di interesse">
+                <option value="" selected>Servizio di interesse…</option>
+                <option>Smaltimento e recupero</option>
+                <option>Stoccaggio</option>
+                <option>Trasporto rifiuti</option>
+                <option>Analisi chimiche</option>
+                <option>Noleggio cassoni</option>
+                <option>Distruzione certificata di prodotti alimentari</option>
+                <option>Bonifiche</option>
+                <option>Intermediazione</option>
+                <option>Igienizzazione</option>
+                <option>Consulenza / Codici EER</option>
+              </select>
+            </div>
+            <div class="field">
+              <textarea id="fMsg" name="messaggio" rows="4" required maxlength="1200" placeholder=" "></textarea>
+              <label for="fMsg">Descriveteci la vostra esigenza *</label>
+            </div>
+            <div class="consent">
+              <input type="checkbox" id="fPrivacy" required>
+              <span><label for="fPrivacy">Ho letto l’informativa sul trattamento dei dati personali e acconsento al trattamento dei miei dati (Reg. UE 2016/679). *</label>
+                <a href="https://rgfambiente.it/wp-content/uploads/2019/06/R.G.F.-Informativa-Clienti_Fornitori-GDPR-1.pdf" target="_blank" rel="noopener">Leggi l’informativa ↗</a></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" data-magnetic>Inviate la richiesta</button>
+            <p class="form__status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#top" class="nav__brand footer__brand">
+          <svg class="nav__logo" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="3"/>
+            <path d="M32 14 C22 24 20 34 32 50 C44 34 42 24 32 14 Z" fill="currentColor"/>
+          </svg>
+          <span class="nav__name">RGF<em>ambiente</em></span>
+        </a>
+        <p class="footer__tag">Servizi ambientali integrati:<br>smaltimento, stoccaggio, trasporto e analisi rifiuti.</p>
+      </div>
+      <div>
+        <h4>Naviga</h4>
+        <ul>
+          <li><a href="#gruppo">Il Gruppo</a></li>
+          <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#processo">Come lavoriamo</a></li>
+          <li><a href="#cer">Codici EER</a></li>
+          <li><a href="#documenti">Documenti</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <ul>
+          <li>Via Leonardo da Vinci, 161<br>24043 Caravaggio (BG)</li>
+          <li><a href="tel:+39036352037">0363 52037</a></li>
+          <li><a href="mailto:info@rgfambiente.it">info@rgfambiente.it</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Certificazioni &amp; Autorizzazioni</h4>
+        <ul>
+          <li><a href="https://rgfambiente.it/wp-content/uploads/2024/01/5331_240109_UN.pdf" target="_blank" rel="noopener">UNI EN ISO 9001:2015 — cert. n. 5331 ↗</a></li>
+          <li><a href="https://rgfambiente.it/wp-content/uploads/2024/01/17019_240109_UN.pdf" target="_blank" rel="noopener">UNI EN ISO 14001:2015 — cert. n. 17019 ↗</a></li>
+          <li>Albo Gestori Ambientali MI01055<br>Cat. 1F · 4E · 5F · 8C · 9C</li>
+          <li>Autorizzazione AIA — DD11 dell'08/01/2026</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> RGF S.r.l. — P.IVA 02079720161 — Tutti i diritti riservati.</p>
+      <p class="footer__credits">Caravaggio (BG) · Italia</p>
+    </div>
+  </footer>
+
+  <!-- Cursor personalizzato -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="js/cer-data.js"></script>
+  <script src="js/main.js"></script>
+  <script type="module" src="js/scene.js"></script>
+</body>
+</html>

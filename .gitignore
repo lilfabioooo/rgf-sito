@@ -1,0 +1,18 @@
+# Config locale di Claude Code (permessi/percorsi specifici della macchina)
+.claude/
+
+# Backup automatici di Blender
+*.blend1
+
+# Materiale di riferimento non destinato al sito (screenshot di terzi)
+foto rgf/
+foto locali x sito/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Dipendenze Node (nel caso in futuro si aggiunga un build step)
+node_modules/
