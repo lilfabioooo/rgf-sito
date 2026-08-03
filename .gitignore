@@ -16,3 +16,5 @@ desktop.ini
 
 # Dipendenze Node (nel caso in futuro si aggiunga un build step)
 node_modules/
+
+.vercel
