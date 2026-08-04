@@ -138,7 +138,9 @@ function initScene() {
     tire:   new THREE.MeshStandardMaterial({ color: 0x0c0e10, metalness: 0.08, roughness: 0.95 }),
     hub:    new THREE.MeshStandardMaterial({ color: 0xb6bcc2, metalness: 0.95, roughness: 0.22, envMapIntensity: 1.3 }),
     // verde di livrea, non insegna al neon: senza emissive e meno saturo
-    green:  new THREE.MeshStandardMaterial({ color: 0x2ea862, metalness: 0.25, roughness: 0.42 }),
+    // Azzurro RGF (#2d8fcc), rilevato dal sito dell'azienda: la fascia sulla
+    // cisterna porta il colore del marchio, non un verde di fantasia.
+    green:  new THREE.MeshStandardMaterial({ color: 0x2d8fcc, metalness: 0.25, roughness: 0.42 }),
     // Mantello cisterna: alluminio lucidato.
     // Con la vecchia environment map disegnata su canvas la fiancata a
     // metalness alta riflettava solo cielo sotto l'orizzonte e scendeva a
@@ -1075,7 +1077,7 @@ function initScene() {
       ctx.fillStyle = "rgba(244,249,246,0.97)";
       ctx.fillText("RGF", 40, 126);
       ctx.font = "600 96px Sora, system-ui, sans-serif";
-      ctx.fillStyle = "rgba(74,224,142,0.97)";
+      ctx.fillStyle = "rgba(95,180,229,0.97)";
       ctx.fillText("ambiente", 410, 138);
       tex.needsUpdate = true;
     };
