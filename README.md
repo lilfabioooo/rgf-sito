@@ -1,15 +1,27 @@
 # RGF Servizi Ambientali — sito web
 
+> **STATO:** PRONTO PER LA REVISIONE DEL PROPRIETARIO — mancano il puntamento
+> del dominio e il consenso a pubblicare; dal cliente servono l'endpoint del
+> modulo contatti e i PDF delle certificazioni, oggi ospitati sul dominio
+> attuale · aggiornato il 28/08/2026
+
 Redesign completo di [rgfambiente.it](https://rgfambiente.it): sito statico ultramoderno
 con scena 3D interattiva, animazioni scroll-driven e ricerca Codici EER integrata.
 
+Su `rgfambiente.it` risponde ancora il WordPress precedente, con il copyright
+fermo al 2020.
+
 ## Anteprima locale
 
+Dalla radice di `SITI/`, la voce `rgf` di `.claude/launch.json`, oppure:
+
 ```bash
-npx --yes http-server -p 8317 -c-1
+node ../../serve-statico.mjs 01-clienti/rgf-servizi-ambientali 4182
 ```
 
-Poi aprire `http://localhost:8317`.
+Poi aprire <http://localhost:4182>. Il vecchio comando `npx http-server`
+scaricava un pacchetto da internet a ogni avvio: non serve, il server statico
+del portfolio è in casa e non ha dipendenze.
 
 ## Struttura
 
