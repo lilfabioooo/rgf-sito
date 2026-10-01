@@ -45,18 +45,34 @@ scripts/            media.mjs (prepara i film), sequenza.mjs e controllo.mjs
 
 ## I film (Higgsfield, 01/10/2026)
 
-Kling 3.0 std, 5 s, muti, dalle foto vere: 4 × 7,5 = **30 crediti**, il budget
-dato da Fabio. Montati in andata e ritorno per un ciclo senza scatto. Numeri dei
-serbatoi, targa «R» e targhe dei mezzi controllati fotogramma per fotogramma:
-invariati. L'apertura viene da uno screenshot Instagram di 403×302 px, quindi
-è morbida: sopra un velo scuro regge; per averla nitida serve una foto grande
-della cisterna al tramonto, o rigenerarla da un ingrandimento (+9,5 crediti).
-Una prova con grafica chiara è nel ramo `prova-chiara-2026-10-01`: scartata.
+**Apertura: uno spot di 11 s montato a ciclo** (`media/apertura*.mp4`), fatto così:
+
+1. **Blender** (`sorgenti/spot/spot.py`, con Blender 5.2: il 4.3 non apre più i
+   file) — tre inquadrature del mezzo procedurale di agosto: arrivo dal basso,
+   fianco, allontanamento. Servono solo come regia.
+2. **Nano Banana Pro** — ogni render diventa un fotogramma fotorealistico, con le
+   foto vere come riferimento (Mercedes al tramonto, cisterna da dietro). Chiesto
+   senza scritte né targhe: i modelli le storpiano.
+3. **Kling 3.0 std** — un piano di 5 s da ogni fotogramma. Del piano di fianco si
+   tiene solo 0–2,8 s: dopo, la cabina cambia marca.
+4. **ffmpeg** — dissolvenze e ciclo dal nero. La versione con cartello finale
+   (marchio, telefono) è `sorgenti/spot/spot-rgf-11s.mp4`, non pubblicata.
+
+È uno spot **generato**, non una ripresa: va bene come pubblicità del mezzo, non
+va presentato come filmato dell'impianto.
+
+**Bande nelle sezioni**: serbatoi, cisterna, magazzino, da Kling sulle foto vere
+del 2014 (numeri e targhe controllati, invariati).
+
+Crediti: 30 per i primi quattro film (il quarto, la cisterna al tramonto da 403
+px, è stato poi sostituito dallo spot) + 6 per i fotogrammi + 22,5 per i piani =
+**58,5**. Ne restano circa 10. Una prova con grafica chiara è nel ramo
+`prova-chiara-2026-10-01`: scartata.
 
 ## Tecnologie
 
-- **Film d'apertura** in `<video>` muto: sui grandi schermi occupa i due terzi
-  di destra e sfuma nel cielo del fondo; sul telefono inquadra la cisterna
+- **Spot d'apertura** in `<video>` muto a ciclo, sotto un velo blu notte che
+  tiene leggibile il testo (più fitto sul telefono)
 - **GSAP + ScrollTrigger** (in casa, `js/vendor/`) — reveal, timeline processo, parallasse
 - **Lenis** (in casa) — smooth scrolling inerziale
 - Font: Archivo / Manrope / JetBrains Mono, file in `assets/fonts/`
@@ -75,8 +91,8 @@ e navigabile. `prefers-reduced-motion` disattiva le animazioni.
   dello scroll, focus in ingresso ed ESC in uscita; nessun'ancora morta né id duplicato.
 - **SEO/social**: canonical, Open Graph e Twitter Card con immagine dedicata,
   JSON-LD `LocalBusiness` validato, robots.txt e sitemap.xml.
-- **Responsive**: nessun overflow orizzontale da 375px in su; il film d'apertura
-  cambia inquadratura e risoluzione (720 px) sul telefono.
+- **Responsive**: nessun overflow orizzontale da 375px in su; lo spot d'apertura
+  scende a 720 px sul telefono.
 - **Performance**: film caricati solo in vista e fermati fuori vista; con
   «riduci movimento» o risparmio dati resta il fotogramma fermo. Zero richieste
   verso terzi (verificato con `scripts/controllo.mjs` il 01/10/2026).
