@@ -1,8 +1,8 @@
 # RGF Servizi Ambientali — sito web
 
-> **STATO:** PRONTO PER LA REVISIONE DEL PROPRIETARIO — aggiornato il 01/10/2026
-> con i film Higgsfield e i fatti nuovi (AIA rinnovata l'08/01/2026, stato dei
-> codici EER). Mancano il puntamento del dominio e il consenso a pubblicare;
+> **STATO:** ONLINE SU https://sito-rgf.vercel.app dal 01/10/2026 (spot d'apertura,
+> film e fatti aggiornati). Su rgfambiente.it risponde ancora il WordPress:
+> mancano il puntamento del dominio e il consenso a pubblicare;
 > dal cliente servono l'endpoint del modulo, i PDF da spostare dal dominio
 > attuale e la conferma dello stato dei codici (vedi `FATTI.md`).
 
