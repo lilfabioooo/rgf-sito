@@ -365,6 +365,8 @@
   const cerCount = document.getElementById("cerCount");
   const chips = document.querySelectorAll(".chip");
   let cerFilter = "all";
+  // js/eer.js: stesso elenco di prima, con lo stato presso RGF (s: i/m)
+  const DATI_EER = (window.EER || []).map((r) => ({ c: r.c, d: r.d, ch: !!r.ch, p: !!r.p, s: r.s }));
 
   // minuscole senza accenti/diacritici, così "però" trova "pero"
   function normalizza(s) {
@@ -388,7 +390,7 @@
   }
 
   function renderCer() {
-    if (!cerResults || !window.CER_DATA) return;
+    if (!cerResults || !DATI_EER.length) return;
     const q = normalizza((cerInput?.value || "").trim());
     const qCode = q.replace(/[\s.]/g, "");
     cerClear?.classList.toggle("is-visible", q.length > 0);
@@ -396,7 +398,8 @@
     const parole = q ? q.split(/\s+/).filter(Boolean) : [];
     const soloCifre = /^\d+$/.test(qCode) ? qCode : "";
 
-    const rows = window.CER_DATA.filter((r) => {
+    const rows = DATI_EER.filter((r) => {
+      if ((cerFilter === "i" || cerFilter === "m") && (r.ch || r.s !== cerFilter)) return false;
       if (cerFilter === "p" && (r.ch || !r.p)) return false;
       if (cerFilter === "np" && (r.ch || r.p)) return false;
       if (!q) return true;
@@ -424,7 +427,10 @@
       const star = r.p ? "*" : "";
       const cls = r.ch ? "cer-row cer-row--chapter" : "cer-row";
       const codeCls = r.p ? "cer-row__code is-p" : "cer-row__code";
-      const tag = r.p ? '<span class="cer-row__tag">PERICOLOSO</span>' : "";
+      const tag = (r.ch ? "" : r.s === "i"
+        ? '<span class="cer-row__stato is-i">IN IMPIANTO</span>'
+        : '<span class="cer-row__stato is-m">INTERMEDIAZIONE</span>')
+        + (r.p ? '<span class="cer-row__tag">PERICOLOSO</span>' : "");
       return `<div class="${cls}" style="animation-delay:${Math.min(i * 28, 400)}ms">
         <span class="${codeCls}">${r.c}${star}</span>
         <span class="cer-row__desc">${r.d}</span>${tag}

@@ -45,30 +45,23 @@
       "addressCountry": "IT"
     },
     "image": "https://rgfambiente.it/assets/og.jpg",
-    "priceRange": "$$"
+    "priceRange": "$$",
+    "sameAs": ["https://www.linkedin.com/company/r-g-f"]
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <!-- Archivo in asse largo per i titoli: ha la proporzione della targa e
        della segnaletica industriale. Manrope per il corpo. Sora+Inter erano
        l'accoppiata più battuta dei siti generati, e si vedeva. -->
-  <link rel="stylesheet" media="print" onload="this.media='all'"
-        href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Manrope:wght@400..800&family=JetBrains+Mono:wght@400;500&display=swap">
-  <noscript><link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Manrope:wght@400..800&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
 
+  <link rel="preload" href="assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Le animazioni di comparsa nascondono i contenuti: attivarle solo se JS è
        disponibile, così senza JS la pagina resta interamente leggibile. -->
   <script>document.documentElement.classList.add("js-anim");</script>
 
-  <script type="importmap">
-    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
-  </script>
 </head>
 <body>
 
@@ -118,7 +111,8 @@
 
     <!-- ============ HERO ============ -->
     <section class="hero" id="hero">
-      <canvas id="heroCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+      <video class="hero__film" id="heroFilm" muted playsinline loop preload="auto" poster="media/tramonto-poster.jpg"
+             data-src="media/tramonto.mp4" data-src-piccolo="media/tramonto-720.mp4" aria-hidden="true"></video>
       <div class="hero__vignette" aria-hidden="true"></div>
 
       <div class="hero__content">
@@ -174,7 +168,7 @@
               ricondizionamento e recupero di rifiuti pericolosi e non pericolosi. Tutte le aree di deposito
               e trattamento sono dotate di efficienti impianti di prevenzione dell’inquinamento.</p>
             <ul class="gruppo__points">
-              <li><strong>Autorizzazione AIA</strong> — deposito preliminare, raggruppamento, ricondizionamento e recupero</li>
+              <li><strong>Autorizzazione AIA rinnovata l’8 gennaio 2026</strong> — deposito preliminare, raggruppamento, ricondizionamento e recupero (Provincia di Bergamo, det. n. 11)</li>
               <li><strong>Albo Gestori Ambientali MI01055</strong> — categorie 1F, 4E, 5F, 8C e 9C</li>
               <li><strong>Moderni sistemi di lavorazione</strong> e stoccaggio con prevenzione dell’inquinamento</li>
             </ul>
@@ -200,6 +194,12 @@
           </div>
         </div>
 
+        <figure class="banda glass reveal">
+          <video class="banda__film film" muted playsinline loop preload="none" poster="media/serbatoi-poster.jpg"
+                 data-src="media/serbatoi.mp4" data-src-piccolo="media/serbatoi-720.mp4" aria-label="Il parco serbatoi dell’impianto RGF, numerati da 1 a 5, sotto il cielo azzurro"></video>
+          <figcaption class="banda__testo"><span class="banda__num">L’impianto</span><strong>Caravaggio, via Leonardo da Vinci 161.</strong> Il parco serbatoi numerati dell’impianto AIA da 7.000 m².</figcaption>
+        </figure>
+
         <h3 class="aziende__head reveal">Le quattro società del gruppo</h3>
         <div class="aziende">
           <article class="azienda glass reveal" data-tilt>
@@ -217,8 +217,8 @@
           <article class="azienda glass reveal" data-tilt>
             <span class="azienda__tag">Trasporti</span>
             <h3>Facchetti Fabio S.r.l.</h3>
-            <p>Specializzata nel trasporto di rifiuti pericolosi e non pericolosi, con sede
-               operativa presso l’impianto RGF per una logistica ottimizzata.</p>
+            <p>Trasporto di rifiuti pericolosi e non pericolosi, spurghi civili e industriali,
+                pulizia di vasche, pozzetti e fosse biologiche. Sede operativa presso l’impianto RGF.</p>
             <a href="https://www.facchettifabio.it" target="_blank" rel="noopener" class="azienda__link">facchettifabio.it ↗</a>
           </article>
           <article class="azienda glass reveal" data-tilt>
@@ -239,6 +239,12 @@
           <p class="section__eyebrow">02 — Servizi</p>
           <h2 class="section__title">Tutto ciò che serve, <span class="grad">in un unico impianto</span></h2>
         </div>
+
+        <figure class="banda glass reveal">
+          <video class="banda__film film" muted playsinline loop preload="none" poster="media/cisterna-poster.jpg"
+                 data-src="media/cisterna.mp4" data-src-piccolo="media/cisterna-720.mp4" aria-label="Una cisterna del gruppo in rimessa, vista da dietro, con le targhe di pericolo"></video>
+          <figcaption class="banda__testo"><span class="banda__num">Trasporto</span><strong>Mezzi autorizzati ADR.</strong> Cisterne e canal-jet del gruppo, in rimessa all’impianto di Caravaggio.</figcaption>
+        </figure>
 
         <div class="servizi__grid" id="serviziGrid">
 
@@ -270,6 +276,16 @@
             <p class="card__text">Ampia flotta di automezzi autorizzati al trasporto di rifiuti pericolosi
               e non pericolosi, con ritiro presso il cliente in tutta sicurezza.</p>
             <span class="card__auth">ALBO 4E &middot; 5F</span>
+          </article>
+
+          <article class="card glass reveal" data-tilt>
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s-6 6.5-6 11a6 6 0 0 0 12 0c0-4.5-6-11-6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg>
+            </div>
+            <h3 class="card__title">Spurghi, pulizie &amp; igienizzazione</h3>
+            <p class="card__text">Con Facchetti Fabio: spurghi civili e industriali, pulizia di vasche,
+              pozzetti e fosse biologiche, igienizzazione di ambienti civili e di lavoro.</p>
+            <span class="card__auth">FACCHETTI</span>
           </article>
 
           <article class="card glass reveal" data-tilt>
@@ -320,16 +336,6 @@
             <p class="card__text">Intermediazione nello smaltimento e recupero dei rifiuti — Albo Gestori
               Ambientali categoria 8C — per individuare sempre il destino più idoneo.</p>
             <span class="card__auth">ALBO 8C</span>
-          </article>
-
-          <article class="card glass reveal" data-tilt>
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16.3c2.2 0 4-1.8 4-4 0-2.5-4-7.3-4-7.3S3 9.8 3 12.3c0 2.2 1.8 4 4 4z"/><path d="M16.5 21c2.5 0 4.5-2 4.5-4.5 0-2.8-4.5-8.5-4.5-8.5S12 13.7 12 16.5c0 2.5 2 4.5 4.5 4.5z"/></svg>
-            </div>
-            <h3 class="card__title">Igienizzazione</h3>
-            <p class="card__text">Servizi di pulizia, igienizzazione e bonifica di ambienti civili e
-              lavorativi, con attrezzature moderne e personale specializzato.</p>
-            
           </article>
 
         </div>
@@ -383,6 +389,12 @@
             </div>
           </div>
         </div>
+
+        <figure class="banda glass reveal">
+          <video class="banda__film film" muted playsinline loop preload="none" poster="media/magazzino-poster.jpg"
+                 data-src="media/magazzino.mp4" data-src-piccolo="media/magazzino-720.mp4" aria-label="Il magazzino delle cisternette IBC impilate su pallet"></video>
+          <figcaption class="banda__testo"><span class="banda__num">Deposito</span><strong>Raggruppamento e ricondizionamento.</strong> Le cisternette in attesa di ripartire verso il recupero o lo smaltimento finale.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -431,9 +443,9 @@
       <div class="container">
         <div class="section__head reveal">
           <p class="section__eyebrow">05 — Strumenti</p>
-          <h2 class="section__title">Ricerca <span class="grad">Codici EER</span> (ex CER)</h2>
-          <p class="section__desc">Cercate nell’Elenco Europeo dei Rifiuti per codice o parola chiave.
-            I codici contrassegnati con asterisco (*) identificano rifiuti pericolosi.</p>
+          <h2 class="section__title">Il vostro codice <span class="grad">entra in impianto?</span></h2>
+          <p class="section__desc">Cercate per codice EER o per parola chiave: per ogni codice vedete se è conferibile
+            all’impianto di Caravaggio o se RGF lo gestisce con l’intermediazione. L’asterisco (*) indica i rifiuti pericolosi.</p>
         </div>
 
         <div class="cer__tool glass reveal">
@@ -443,17 +455,20 @@
             <button class="cer__clear" id="cerClear" aria-label="Pulisci ricerca">×</button>
           </div>
           <div class="cer__bar">
-            <div class="cer__filters" role="group" aria-label="Filtra per pericolosità">
+            <div class="cer__filters" role="group" aria-label="Filtra i codici">
               <button class="chip is-active" data-filter="all" aria-pressed="true">Tutti</button>
               <button class="chip" data-filter="p" aria-pressed="false">Pericolosi *</button>
               <button class="chip" data-filter="np" aria-pressed="false">Non pericolosi</button>
+              <button class="chip" data-filter="i" aria-pressed="false">In impianto</button>
+              <button class="chip" data-filter="m" aria-pressed="false">Intermediazione</button>
             </div>
             <p class="cer__count" id="cerCount" role="status" aria-live="polite"></p>
           </div>
-          <div class="cer__results" id="cerResults"></div>
-          <p class="cer__note">Elenco fornito a solo scopo informativo. Per la classificazione ufficiale del vostro
-            rifiuto <a href="#contatti">contattate i nostri tecnici</a>: l’attribuzione del codice corretto
-            richiede spesso un’analisi di laboratorio.</p>
+          <div class="cer__results" id="cerResults" data-lenis-prevent></div>
+          <p class="cer__note">Elenco indicativo di 265 codici frequenti. Lo stato <em>in impianto</em> / <em>intermediazione</em>
+            è quello del database di RGF al 1° ottobre 2026: prima del conferimento l’ufficio conferma codice e operazioni,
+            e l’attribuzione del codice corretto richiede spesso un’analisi di laboratorio.
+            Codice non in elenco? <a href="#contatti">Chiedete ai nostri tecnici</a>.</p>
         </div>
       </div>
     </section>
@@ -471,7 +486,7 @@
         <div class="docs reveal">
           <a class="doc glass" href="https://rgfambiente.it/wp-content/uploads/2026/03/DD-11-DEL-8-1-26-AIA.pdf" target="_blank" rel="noopener">
             <span class="doc__ico" aria-hidden="true">📜</span>
-            <span class="doc__body"><strong>Autorizzazione AIA</strong><span>DD11 dell'08/01/2026 — esercizio impianto</span></span>
+            <span class="doc__body"><strong>Autorizzazione AIA</strong><span>Det. n. 11 dell'08/01/2026 — rinnovo dell’AIA, Provincia di Bergamo</span></span>
             <span class="doc__ext" aria-hidden="true">PDF ↗</span>
           </a>
           <a class="doc glass" href="https://rgfambiente.it/wp-content/uploads/2024/01/5331_240109_UN.pdf" target="_blank" rel="noopener">
@@ -643,6 +658,8 @@
           <li>Via Leonardo da Vinci, 161<br>24043 Caravaggio (BG)</li>
           <li><a href="tel:+39036352037">0363 52037</a></li>
           <li><a href="mailto:info@rgfambiente.it">info@rgfambiente.it</a></li>
+          <li><a href="https://www.linkedin.com/company/r-g-f" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://www.instagram.com/facchettifabiosrl/" target="_blank" rel="noopener">Il parco mezzi del gruppo su Instagram ↗</a></li>
         </ul>
       </div>
       <div>
@@ -665,11 +682,11 @@
   <div class="cursor" id="cursor" aria-hidden="true"></div>
   <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
-  <script src="js/cer-data.js"></script>
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/vendor/lenis.min.js"></script>
+  <script src="js/eer.js"></script>
   <script src="js/main.js"></script>
-  <script type="module" src="js/scene.js"></script>
+  <script src="js/film.js" defer></script>
 </body>
 </html>

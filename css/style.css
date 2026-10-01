@@ -1,3 +1,43 @@
+/* Caratteri in casa (da @fontsource-variable 5.x): prima arrivavano da
+   Google Fonts, una richiesta a terzi prima che la pagina fosse leggibile. */
+@font-face {
+  font-family: "Archivo";
+  src: url("../assets/fonts/archivo-latin-wdth-normal.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("../assets/fonts/archivo-latin-ext-wdth-normal.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/manrope-latin-wght-normal.woff2") format("woff2-variations");
+  font-weight: 200 800;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/manrope-latin-ext-wght-normal.woff2") format("woff2-variations");
+  font-weight: 200 800;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../assets/fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2-variations");
+  font-weight: 100 800;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* ============================================================
    RGF Servizi Ambientali — design system
    ============================================================ */
@@ -342,16 +382,16 @@ main, footer, header { position: relative; z-index: 1; }
     radial-gradient(ellipse 46% 18% at 66% 80%, rgba(255, 176, 104, 0.16), transparent 72%),
     linear-gradient(180deg, #26313f 0%, #3c3a49 26%, #6e5541 48%, #b47a49 64%, #4a3320 78%, var(--bg) 100%);
 }
-.hero__canvas {
+.hero__film {
   position: absolute; inset: 0; width: 100%; height: 100%;
-  display: block;
+  display: block; object-fit: cover; object-position: 78% 70%;
 }
 /* Ingresso del mezzo. La camera 3D fa già una carrellata di avvicinamento in
    scene.js: qui si aggiunge solo la dissolvenza, sfasata di 260ms perché la
    scena parta a fotogramma pieno e non si veda il primo frame nudo.
    La scala parte da 1.04 e non da 0.9: deve sembrare che la nebbia si
    diradi, non che l'oggetto arrivi da lontano — quello lo fa già la camera. */
-.js-anim .hero__canvas {
+.js-anim .hero__film {
   opacity: 0;
   transform: scale(1.04);
   animation: posaMezzo 1.5s 0.26s var(--ease-out) forwards;
@@ -360,7 +400,7 @@ main, footer, header { position: relative; z-index: 1; }
   to { opacity: 1; transform: scale(1); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .js-anim .hero__canvas { opacity: 1; transform: none; animation: none; }
+  .js-anim .hero__film { opacity: 1; transform: none; animation: none; }
 }
 .hero__vignette {
   position: absolute; inset: 0; pointer-events: none;
@@ -1064,7 +1104,7 @@ a.doc:hover {
   body { background: #fff; color: #000; }
   body::before,
   .preloader, .scroll-progress, .cursor, .cursor-dot,
-  .hero__canvas, .hero__vignette, .hero__scrollcue,
+  .hero__film, .hero__vignette, .hero__scrollcue,
   .nav, .marquee, .sostenibilita__bg, .skip-link { display: none !important; }
   .hero { min-height: auto; background: none; padding: 20px 0; }
   .hero__content::before { display: none; }
@@ -1090,3 +1130,76 @@ a.doc:hover {
   .reveal, .reveal-hero { opacity: 1 !important; transform: none !important; }
   .hero__line > span { transform: none !important; }
 }
+
+/* ============ BANDE FILM (Higgsfield, dalle foto vere dell'impianto) ============
+   Un film largo dentro la cornice di vetro, con la didascalia sul bordo basso.
+   Partono solo quando entrano in vista (main.js), e con riduzione del
+   movimento resta il fotogramma fermo. */
+.banda {
+  position: relative; margin: 0 0 56px; padding: 0; overflow: hidden;
+  aspect-ratio: 21 / 9;
+}
+.banda__film { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.banda::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(to top, rgba(4, 7, 14, 0.88) 0%, rgba(4, 7, 14, 0.35) 38%, transparent 62%);
+}
+.banda__testo {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 1;
+  padding: 24px 28px; max-width: 760px;
+  color: var(--ink); font-size: 16px; line-height: 1.5;
+}
+.banda__num {
+  display: block; margin-bottom: 6px;
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--ember);
+}
+.banda__testo strong { color: #fff; }
+@media (max-width: 720px) {
+  .banda { aspect-ratio: 4 / 3; margin-bottom: 40px; }
+  .banda__testo { padding: 18px; font-size: 15px; }
+}
+
+/* Stato del codice presso RGF (database del sito attuale, 01/10/2026) */
+.cer-row__stato {
+  font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em;
+  padding: 3px 10px; border-radius: 999px; white-space: nowrap;
+}
+.cer-row__stato.is-i { background: rgba(var(--acc-rgb), 0.16); color: var(--acc-2); }
+.cer-row__stato.is-m { background: var(--ember-soft); color: var(--ember-2); }
+@media (max-width: 560px) {
+  .cer-row { flex-wrap: wrap; }
+  .cer-row__desc { flex-basis: 100%; order: 3; }
+}
+
+/* Il film d'apertura nasce da una foto piccola e stretta sul mezzo: a tutta
+   larghezza la cabina riempirebbe lo schermo, sgranata. Sugli schermi larghi
+   occupa i due terzi di destra e sfuma a sinistra nel cielo del fondo, come
+   stava il mezzo 3D. */
+@media (min-width: 1100px) {
+  .hero__film {
+    left: auto; width: 66%;
+    object-position: 70% 75%;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 34%);
+            mask-image: linear-gradient(to right, transparent 0%, #000 34%);
+  }
+}
+
+/* Bersagli ≥ 24 px (WCAG 2.5.8): la casella del consenso era 13×13, i link
+   di menu, piede e società alti 19-21 px. */
+#fPrivacy { width: 24px; height: 24px; flex: none; accent-color: var(--acc); }
+.nav__links a, .footer a, .azienda__link, .cer__note a, .infolist a, .consent a {
+  display: inline-flex; align-items: center; min-height: 28px;
+}
+
+/* Ricerca EER: lo stato subito dopo il codice, non in fondo alla riga */
+.cer-row__stato { order: 1; }
+.cer-row__desc { order: 2; }
+.cer-row__tag { order: 3; }
+
+/* Apertura sul telefono: la cisterna e il tramonto, non la sola cabina */
+@media (max-width: 720px) {
+  .hero__film { object-position: 34% 70%; }
+}
+/* Il film nasce morbido: un velo leggero lo fa sembrare una scelta */
+.hero__vignette { box-shadow: inset 0 0 0 100vmax rgba(4, 7, 14, 0.18); }

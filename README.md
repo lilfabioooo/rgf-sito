@@ -1,12 +1,13 @@
 # RGF Servizi Ambientali — sito web
 
-> **STATO:** PRONTO PER LA REVISIONE DEL PROPRIETARIO — mancano il puntamento
-> del dominio e il consenso a pubblicare; dal cliente servono l'endpoint del
-> modulo contatti e i PDF delle certificazioni, oggi ospitati sul dominio
-> attuale · aggiornato il 28/08/2026
+> **STATO:** PRONTO PER LA REVISIONE DEL PROPRIETARIO — aggiornato il 01/10/2026
+> con i film Higgsfield e i fatti nuovi (AIA rinnovata l'08/01/2026, stato dei
+> codici EER). Mancano il puntamento del dominio e il consenso a pubblicare;
+> dal cliente servono l'endpoint del modulo, i PDF da spostare dal dominio
+> attuale e la conferma dello stato dei codici (vedi `FATTI.md`).
 
 Redesign completo di [rgfambiente.it](https://rgfambiente.it): sito statico ultramoderno
-con scena 3D interattiva, animazioni scroll-driven e ricerca Codici EER integrata.
+con film d'apertura (dal 01/10/2026 al posto della scena 3D), animazioni scroll-driven e ricerca Codici EER integrata.
 
 Su `rgfambiente.it` risponde ancora il WordPress precedente, con il copyright
 fermo al 2020.
@@ -27,31 +28,42 @@ del portfolio è in casa e non ha dipendenze.
 
 ```
 index.html          pagina unica (one-page, sezioni ancorate)
-css/style.css       design system completo (dark theme, glassmorphism, responsive)
-js/scene.js         scena 3D Three.js: autoarticolato con cisterna cromata al tramonto
-js/main.js          preloader, smooth scroll, animazioni GSAP, ricerca EER, form
-js/cer-data.js      dataset Codici EER (285 voci: 20 capitoli + 265 codici)
-assets/favicon.svg  favicon
-assets/og.jpg       immagine social 1200×630 (render 3D + branding)
-robots.txt          direttive crawler
-sitemap.xml         sitemap
-foto rgf/           foto di riferimento del parco mezzi (art direction)
+css/style.css       design system (fondo scuro, vetro, responsive), caratteri in casa
+js/main.js          preloader, scorrimento, animazioni GSAP, ricerca EER, modulo
+js/film.js          carica e fa girare i film solo quando sono in vista
+js/eer.js           265 codici EER con lo stato presso RGF (in impianto / intermediazione)
+js/vendor/          GSAP 3.12.5, ScrollTrigger, Lenis 1.1.14 — in casa, non da CDN
+assets/fonts/       Archivo (wdth), Manrope, JetBrains Mono — da @fontsource-variable 5.x
+media/              4 film (tramonto in apertura; serbatoi, cisterna, magazzino nelle bande),
+                    versioni 1060/1280 e 720 px, poster
+FATTI.md            i fatti verificati il 01/10/2026, con le fonti e cosa chiedere
+sorgenti/           film grezzi Higgsfield, foto del sito vecchio, scena 3D di agosto,
+                    risposta di find-cer.php — non pubblicati (.vercelignore)
+scripts/            media.mjs (prepara i film), sequenza.mjs e controllo.mjs
+                    (copiati da usteria-della-lella/scripts)
 ```
+
+## I film (Higgsfield, 01/10/2026)
+
+Kling 3.0 std, 5 s, muti, dalle foto vere: 4 × 7,5 = **30 crediti**, il budget
+dato da Fabio. Montati in andata e ritorno per un ciclo senza scatto. Numeri dei
+serbatoi, targa «R» e targhe dei mezzi controllati fotogramma per fotogramma:
+invariati. L'apertura viene da uno screenshot Instagram di 403×302 px, quindi
+è morbida: sopra un velo scuro regge; per averla nitida serve una foto grande
+della cisterna al tramonto, o rigenerarla da un ingrandimento (+9,5 crediti).
+Una prova con grafica chiara è nel ramo `prova-chiara-2026-10-01`: scartata.
 
 ## Tecnologie
 
-- **Three.js** (via CDN, importmap) — hero 3D: autoarticolato con cisterna cromata
-  modellato proceduralmente, ispirato alle foto reali del parco mezzi (motrice +
-  semirimorchio cisterna a 3 assi, scritta "RGF ambiente", fascia verde), luce da
-  tramonto con environment map personalizzata, ombre soft, parallasse mouse e
-  inquadrature adattive per mobile/tablet/desktop
-- **GSAP + ScrollTrigger** (CDN) — reveal, timeline processo, parallasse
-- **Lenis** (CDN) — smooth scrolling inerziale
-- Font: Sora / Inter / JetBrains Mono (Google Fonts)
+- **Film d'apertura** in `<video>` muto: sui grandi schermi occupa i due terzi
+  di destra e sfuma nel cielo del fondo; sul telefono inquadra la cisterna
+- **GSAP + ScrollTrigger** (in casa, `js/vendor/`) — reveal, timeline processo, parallasse
+- **Lenis** (in casa) — smooth scrolling inerziale
+- Font: Archivo / Manrope / JetBrains Mono, file in `assets/fonts/`
 - Nessun build step: deployabile così com'è su qualsiasi hosting statico
   (Netlify, Vercel, GitHub Pages, FTP tradizionale)
 
-Tutte le librerie hanno fallback: senza CDN il sito resta pienamente leggibile
+Tutte le librerie hanno fallback: senza JavaScript il sito resta pienamente leggibile
 e navigabile. `prefers-reduced-motion` disattiva le animazioni.
 
 ## Qualità verificata
@@ -63,11 +75,12 @@ e navigabile. `prefers-reduced-motion` disattiva le animazioni.
   dello scroll, focus in ingresso ed ESC in uscita; nessun'ancora morta né id duplicato.
 - **SEO/social**: canonical, Open Graph e Twitter Card con immagine dedicata,
   JSON-LD `LocalBusiness` validato, robots.txt e sitemap.xml.
-- **Responsive**: nessun overflow orizzontale da 375px in su; la scena 3D adatta
-  inquadratura, risoluzione e qualità delle ombre alla dimensione dello schermo.
-- **Performance**: loop 3D sospeso quando la hero esce dal viewport, pixel ratio e
-  shadow map ridotti sotto i 900px, preconnect verso font e CDN.
-- **Stampa**: foglio di stile dedicato (nasconde 3D e form, espande gli URL).
+- **Responsive**: nessun overflow orizzontale da 375px in su; il film d'apertura
+  cambia inquadratura e risoluzione (720 px) sul telefono.
+- **Performance**: film caricati solo in vista e fermati fuori vista; con
+  «riduci movimento» o risparmio dati resta il fotogramma fermo. Zero richieste
+  verso terzi (verificato con `scripts/controllo.mjs` il 01/10/2026).
+- **Stampa**: foglio di stile dedicato (nasconde film e form, espande gli URL).
 
 ## Contenuti
 

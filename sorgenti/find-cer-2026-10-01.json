@@ -1,0 +1,2387 @@
+{
+ "01.01.01": [
+  {
+   "Code": "01.01.01",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti da estrazione di minerali metalliferi"
+  }
+ ],
+ "01.01.02": [
+  {
+   "Code": "01.01.02",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti da estrazione di minerali non metalliferi"
+  }
+ ],
+ "01.04.08": [
+  {
+   "Code": "01.04.08",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "scarti di ghiaia e pietrisco, diversi da quelli di cui alla voce 01 04 07"
+  }
+ ],
+ "01.04.09": [
+  {
+   "Code": "01.04.09",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "scarti di sabbia e argilla"
+  }
+ ],
+ "01.04.13": [
+  {
+   "Code": "01.04.13",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti prodotti dal taglio e dalla segagione della pietra, diversi da quelli di cui alla voce 01 04 07"
+  }
+ ],
+ "01.05.04": [
+  {
+   "Code": "01.05.04",
+   "Smaltisce": 1,
+   "Operazioni": "R12,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "fanghi e rifiuti di perforazione di pozzi per acque dolci"
+  }
+ ],
+ "02.01.01": [
+  {
+   "Code": "02.01.01",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "fanghi da operazioni di lavaggio e pulizia"
+  }
+ ],
+ "02.01.03": [
+  {
+   "Code": "02.01.03",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "scarti di tessuti vegetali"
+  }
+ ],
+ "02.01.04": [
+  {
+   "Code": "02.01.04",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti plastici (ad esclusione degli imballaggi)"
+  }
+ ],
+ "02.01.06": [
+  {
+   "Code": "02.01.06",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "feci animali, urine e letame (comprese le lettiere usate), effluenti, raccolti separatamente e trattati fuori sito"
+  }
+ ],
+ "02.01.08": [
+  {
+   "Code": "02.01.08",
+   "Smaltisce": 1,
+   "Operazioni": "D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "rifiuti agrochimici contenenti sostanze pericolose"
+  }
+ ],
+ "02.01.09": [
+  {
+   "Code": "02.01.09",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti agrochimici diversi da quelli della voce 02 01 08"
+  }
+ ],
+ "02.01.10": [
+  {
+   "Code": "02.01.10",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti metallici"
+  }
+ ],
+ "02.02.03": [
+  {
+   "Code": "02.02.03",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "scarti inutilizzabili per il consumo o la trasformazione"
+  }
+ ],
+ "02.02.04": [
+  {
+   "Code": "02.02.04",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "fanghi prodotti dal trattamento in loco degli effluenti"
+  }
+ ],
+ "02.03.04": [
+  {
+   "Code": "02.03.04",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "scarti inutilizzabili per il consumo o la trasformazione"
+  }
+ ],
+ "02.05.01": [
+  {
+   "Code": "02.05.01",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "scarti inutilizzabili per il consumo o la trasformazione"
+  }
+ ],
+ "02.06.01": [
+  {
+   "Code": "02.06.01",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "scarti inutilizzabili per il consumo o la trasformazione"
+  }
+ ],
+ "02.07.04": [
+  {
+   "Code": "02.07.04",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "scarti inutilizzabili per il consumo o la trasformazione"
+  }
+ ],
+ "03.01.01": [
+  {
+   "Code": "03.01.01",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "scarti di corteccia e sughero"
+  }
+ ],
+ "03.01.04": [
+  {
+   "Code": "03.01.04",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "segatura, trucioli, residui di taglio, legno, pannelli di truciolare e  piallacci contenenti sostanze pericolose"
+  }
+ ],
+ "03.01.05": [
+  {
+   "Code": "03.01.05",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "segatura, trucioli, residui di taglio, legno, pannelli di truciolare e piallacci diversi da quelli di cui  alla voce 03 01 04"
+  }
+ ],
+ "03.03.01": [
+  {
+   "Code": "03.03.01",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "scarti di corteccia e legno"
+  }
+ ],
+ "03.03.07": [
+  {
+   "Code": "03.03.07",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "scarti della separazione meccanica nella produzione di polpa da rifiuti di carta e cartone"
+  }
+ ],
+ "03.03.08": [
+  {
+   "Code": "03.03.08",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "scarti della selezione di carta e cartone destinati ad essere riciclati"
+  }
+ ],
+ "04.01.08": [
+  {
+   "Code": "04.01.08",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "cuoio conciato (scarti, cascami, ritagli, polveri di lucidatura) contenenti cromo"
+  }
+ ],
+ "04.02.09": [
+  {
+   "Code": "04.02.09",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti da materiali composti (fibre impregnate, elastomeri, plastomeri)"
+  }
+ ],
+ "04.02.21": [
+  {
+   "Code": "04.02.21",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti da fibre tessili grezze"
+  }
+ ],
+ "04.02.22": [
+  {
+   "Code": "04.02.22",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti da fibre tessili lavorate"
+  }
+ ],
+ "05.01.03": [
+  {
+   "Code": "05.01.03",
+   "Smaltisce": 1,
+   "Operazioni": "D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "morchie depositate sul fondo dei serbatoi"
+  }
+ ],
+ "05.01.05": [
+  {
+   "Code": "05.01.05",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "perdite di olio"
+  }
+ ],
+ "05.01.06": [
+  {
+   "Code": "05.01.06",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "fanghi oleosi prodotti dalla manutenzione di impianti e apparecchiature"
+  }
+ ],
+ "05.01.09": [
+  {
+   "Code": "05.01.09",
+   "Smaltisce": 1,
+   "Operazioni": "D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, contenenti sostanze pericolose"
+  }
+ ],
+ "05.01.10": [
+  {
+   "Code": "05.01.10",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, diversi da quelli di cui alla voce 05 01 09"
+  }
+ ],
+ "06.01.01": [
+  {
+   "Code": "06.01.01",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "acido solforico ed acido solforoso"
+  }
+ ],
+ "06.01.02": [
+  {
+   "Code": "06.01.02",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "acido cloridrico"
+  }
+ ],
+ "06.01.04": [
+  {
+   "Code": "06.01.04",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "acido fosforico e fosforoso"
+  }
+ ],
+ "06.01.05": [
+  {
+   "Code": "06.01.05",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "acido nitrico e acido nitroso"
+  }
+ ],
+ "06.01.06": [
+  {
+   "Code": "06.01.06",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "altri acidi"
+  }
+ ],
+ "06.02.01": [
+  {
+   "Code": "06.02.01",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "idrossido di calcio"
+  }
+ ],
+ "06.02.04": [
+  {
+   "Code": "06.02.04",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "idrossido di sodio e di potassio"
+  }
+ ],
+ "06.02.05": [
+  {
+   "Code": "06.02.05",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "altre basi"
+  }
+ ],
+ "06.03.13": [
+  {
+   "Code": "06.03.13",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "Sali e loro soluzioni, contenenti metalli pesanti"
+  }
+ ],
+ "06.03.14": [
+  {
+   "Code": "06.03.14",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "Sali e loro soluzioni, diversi da quelli di cui alle voci 06 03 11 e 06 03 13"
+  }
+ ],
+ "06.04.04": [
+  {
+   "Code": "06.04.04",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "rifiuti contenenti mercurio"
+  }
+ ],
+ "06.04.05": [
+  {
+   "Code": "06.04.05",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "rifiuti contenenti altri metalli pesanti"
+  }
+ ],
+ "06.13.02": [
+  {
+   "Code": "06.13.02",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "carbone attivato esaurito (tranne 06 07 02)"
+  }
+ ],
+ "07.01.01": [
+  {
+   "Code": "07.01.01",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "soluzioni acquose di lavaggio ed acque madri"
+  }
+ ],
+ "07.01.03": [
+  {
+   "Code": "07.01.03",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "solventi organici alogenati, soluzioni di lavaggio ed acque madri"
+  }
+ ],
+ "07.01.04": [
+  {
+   "Code": "07.01.04",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "altri solventi organici, soluzioni di lavaggio ed acque madri"
+  }
+ ],
+ "07.01.11": [
+  {
+   "Code": "07.01.11",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, contenenti sostanze pericolose "
+  }
+ ],
+ "07.01.12": [
+  {
+   "Code": "07.01.12",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, diversi da quelli di cui alla voce 07 01 11"
+  }
+ ],
+ "07.02.13": [
+  {
+   "Code": "07.02.13",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti plastici"
+  }
+ ],
+ "07.02.17": [
+  {
+   "Code": "07.02.17",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti contenenti silicone diversi da quelli menzionati alla voce 07 02 16"
+  }
+ ],
+ "07.03.04": [
+  {
+   "Code": "07.03.04",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "altri solventi organici, soluzioni di lavaggio ed acque madri"
+  }
+ ],
+ "07.05.13": [
+  {
+   "Code": "07.05.13",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "rifiuti solidi contenenti sostanze pericolose"
+  }
+ ],
+ "07.05.14": [
+  {
+   "Code": "07.05.14",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti solidi, diversi da quelli di cui alla voce 07 05 13"
+  }
+ ],
+ "07.06.04": [
+  {
+   "Code": "07.06.04",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "altri solventi organici, soluzioni di lavaggio ed acque madri"
+  }
+ ],
+ "08.01.11": [
+  {
+   "Code": "08.01.11",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "pitture e vernici di scarto, contenenti solventi organici o altre sostanze pericolose"
+  }
+ ],
+ "08.01.12": [
+  {
+   "Code": "08.01.12",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "pitture e vernici di scarto, diverse da quelle di cui alla voce 08 01 11"
+  }
+ ],
+ "08.01.13": [
+  {
+   "Code": "08.01.13",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "fanghi prodotti da pitture e vernici, contenenti solventi organici o altre sostanze pericolose"
+  }
+ ],
+ "08.01.15": [
+  {
+   "Code": "08.01.15",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "fanghi acquosi contenenti pitture e vernici, contenenti solventi organici o altre sostanze pericolose"
+  }
+ ],
+ "08.01.17": [
+  {
+   "Code": "08.01.17",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "fanghi prodotti dalla rimozione di pitture e vernici, contenenti solventi organici o altre sostanze pericolose"
+  }
+ ],
+ "08.01.18": [
+  {
+   "Code": "08.01.18",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "fanghi prodotti dalla rimozione di pitture e vernici, diversi da quelli di cui alla voce 08 01 17"
+  }
+ ],
+ "08.01.21": [
+  {
+   "Code": "08.01.21",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "residui di vernici o di sverniciatori"
+  }
+ ],
+ "08.03.12": [
+  {
+   "Code": "08.03.12",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "scarti di inchiostro, contenenti sostanze pericolose"
+  }
+ ],
+ "08.03.13": [
+  {
+   "Code": "08.03.13",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "scarti di inchiostro, diversi da quelli di cui alla voce 08 03 12"
+  }
+ ],
+ "08.03.17": [
+  {
+   "Code": "08.03.17",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "toner  per stampa esauriti, contenenti sostanze pericolose"
+  }
+ ],
+ "08.03.18": [
+  {
+   "Code": "08.03.18",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "toner per stampa esauriti, diversi da quelli di cui alla voce 08 03 17"
+  }
+ ],
+ "08.04.09": [
+  {
+   "Code": "08.04.09",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "adesivi e sigillanti di scarto, contenenti solventi organici o altre sostanze pericolose"
+  }
+ ],
+ "08.04.10": [
+  {
+   "Code": "08.04.10",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "adesivi e sigillanti di scarto, diversi da quelli di cui alla voce 08 04 09"
+  }
+ ],
+ "08.05.01": [
+  {
+   "Code": "08.05.01",
+   "Smaltisce": 1,
+   "Operazioni": "D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "isocianati di scarto"
+  }
+ ],
+ "09.01.01": [
+  {
+   "Code": "09.01.01",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "soluzioni di sviluppo e soluzioni attivanti a base acquosa"
+  }
+ ],
+ "09.01.04": [
+  {
+   "Code": "09.01.04",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "soluzioni di fissaggio"
+  }
+ ],
+ "09.01.07": [
+  {
+   "Code": "09.01.07",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "pellicole e carta per fotografia, contenenti argento o composti dell'argento"
+  }
+ ],
+ "09.01.08": [
+  {
+   "Code": "09.01.08",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "pellicole e carta per fotografia, non contenenti argento o composti dell'argento"
+  }
+ ],
+ "10.01.01": [
+  {
+   "Code": "10.01.01",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "ceneri pesanti, fanghi e polveri di caldaia, tranne le polveri di caldaia di cui alla voce 10 01 04"
+  }
+ ],
+ "10.01.02": [
+  {
+   "Code": "10.01.02",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "ceneri leggere di carbone"
+  }
+ ],
+ "10.01.15": [
+  {
+   "Code": "10.01.15",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "ceneri pesanti, fanghi e polveri di caldaia prodotte dal coincenerimento, diverse da quelli di cui alla voce 10 01 14"
+  }
+ ],
+ "10.02.01": [
+  {
+   "Code": "10.02.01",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti del trattamento delle scorie"
+  }
+ ],
+ "10.02.10": [
+  {
+   "Code": "10.02.10",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "scaglie di laminazione"
+  }
+ ],
+ "10.09.06": [
+  {
+   "Code": "10.09.06",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "forme e anime da fonderia inutilizzate, diverse da quelle di cui alla voce 10 09 05"
+  }
+ ],
+ "10.09.08": [
+  {
+   "Code": "10.09.08",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "forme e anime da fonderia utilizzate,  diverse da quelle di cui alla voce 10 09 07"
+  }
+ ],
+ "10.11.12": [
+  {
+   "Code": "10.11.12",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti di vetro diversi da quelli di cui alla voce 10 11 11 "
+  }
+ ],
+ "10.12.08": [
+  {
+   "Code": "10.12.08",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "scarti di ceramica, mattoni, mattonelle e materiali da costruzione (sottoposti a trattamento termico)"
+  }
+ ],
+ "10.13.14": [
+  {
+   "Code": "10.13.14",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti e fanghi di cemento"
+  }
+ ],
+ "11.01.05": [
+  {
+   "Code": "11.01.05",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "acidi di decappaggio"
+  }
+ ],
+ "11.01.06": [
+  {
+   "Code": "11.01.06",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "acidi non specificati altrimenti"
+  }
+ ],
+ "11.01.08": [
+  {
+   "Code": "11.01.08",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "fanghi di fosfatazione"
+  }
+ ],
+ "11.01.09": [
+  {
+   "Code": "11.01.09",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "fanghi e residui di filtrazione, contenenti sostanze pericolose"
+  }
+ ],
+ "11.01.10": [
+  {
+   "Code": "11.01.10",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "fanghi e residui di filtrazione, diversi da quelli di cui alla voce 11 01 09"
+  }
+ ],
+ "11.01.11": [
+  {
+   "Code": "11.01.11",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "soluzioni acquose di risciacquo, contenenti sostanze pericolose"
+  }
+ ],
+ "11.01.12": [
+  {
+   "Code": "11.01.12",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "soluzioni acquose di risciacquo, diverse da quelle di cui alla voce 11 01 11"
+  }
+ ],
+ "11.01.13": [
+  {
+   "Code": "11.01.13",
+   "Smaltisce": 1,
+   "Operazioni": "D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "rifiuti di sgrassaggio contenenti sostanze pericolose"
+  }
+ ],
+ "11.05.01": [
+  {
+   "Code": "11.05.01",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "zinco solido"
+  }
+ ],
+ "12.01.01": [
+  {
+   "Code": "12.01.01",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "limatura e trucioli di materiali ferrosi"
+  }
+ ],
+ "12.01.02": [
+  {
+   "Code": "12.01.02",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "polveri e particolato di materiali ferrosi"
+  }
+ ],
+ "12.01.03": [
+  {
+   "Code": "12.01.03",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "limatura, scaglie e polveri di metalli non ferrosi"
+  }
+ ],
+ "12.01.04": [
+  {
+   "Code": "12.01.04",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "polveri e particolato di materiali non ferrosi"
+  }
+ ],
+ "12.01.05": [
+  {
+   "Code": "12.01.05",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "limatura e trucioli di materiali plastici"
+  }
+ ],
+ "12.01.06": [
+  {
+   "Code": "12.01.06",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "oli minerali per macchinari, contenenti alogeni (eccetto emulsioni e soluzioni)"
+  }
+ ],
+ "12.01.07": [
+  {
+   "Code": "12.01.07",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "oli minerali per macchinari, non contenenti alogeni (eccetto emulsioni e soluzioni)"
+  }
+ ],
+ "12.01.08": [
+  {
+   "Code": "12.01.08",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "emulsioni e soluzioni per macchinari, contenenti alogeni"
+  }
+ ],
+ "12.01.09": [
+  {
+   "Code": "12.01.09",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "emulsioni e soluzioni per macchinari, non contenenti alogeni"
+  }
+ ],
+ "12.01.10": [
+  {
+   "Code": "12.01.10",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "oli sintetici per macchinari"
+  }
+ ],
+ "12.01.12": [
+  {
+   "Code": "12.01.12",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "cere e grassi esauriti"
+  }
+ ],
+ "12.01.13": [
+  {
+   "Code": "12.01.13",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti di saldatura"
+  }
+ ],
+ "12.01.14": [
+  {
+   "Code": "12.01.14",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "fanghi di lavorazione, contenenti sostanze pericolose"
+  }
+ ],
+ "12.01.15": [
+  {
+   "Code": "12.01.15",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "fanghi di lavorazione, diversi da quelli di cui alla voce 12 01 14"
+  }
+ ],
+ "12.01.17": [
+  {
+   "Code": "12.01.17",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "residui di materiale di sabbiatura, diversi da quelli di cui alla voce 12 01 16"
+  }
+ ],
+ "12.01.18": [
+  {
+   "Code": "12.01.18",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "fanghi di rettifica, affilatura e lappatura, contenenti oli"
+  }
+ ],
+ "12.01.20": [
+  {
+   "Code": "12.01.20",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "corpi d'utensile e materiali di rettifica esauriti, contenenti sostanze pericolose"
+  }
+ ],
+ "12.01.21": [
+  {
+   "Code": "12.01.21",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "corpi d'utensile e materiali di rettifica esauriti, diversi da quelli di cui alla voce 12 01 20"
+  }
+ ],
+ "12.03.01": [
+  {
+   "Code": "12.03.01",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "soluzioni acquosi di lavaggio"
+  }
+ ],
+ "13.01.10": [
+  {
+   "Code": "13.01.10",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "oli minerali per circuiti idraulici, non clorurati"
+  }
+ ],
+ "13.01.11": [
+  {
+   "Code": "13.01.11",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "oli sintetici per circuiti idraulici"
+  }
+ ],
+ "13.01.13": [
+  {
+   "Code": "13.01.13",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "altri oli per circuiti idraulici"
+  }
+ ],
+ "13.02.05": [
+  {
+   "Code": "13.02.05",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "oli minerali per motori, ingranaggi e lubrificazione, non clorurati"
+  }
+ ],
+ "13.02.06": [
+  {
+   "Code": "13.02.06",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "oli sintetici per motori, ingranaggi e lubrificazione"
+  }
+ ],
+ "13.02.08": [
+  {
+   "Code": "13.02.08",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "altri oli per motori, ingranaggi e lubrificazione"
+  }
+ ],
+ "13.03.07": [
+  {
+   "Code": "13.03.07",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "oli isolanti e termovettori minerali non clorurati"
+  }
+ ],
+ "13.03.10": [
+  {
+   "Code": "13.03.10",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "altri oli isolanti e termovettori"
+  }
+ ],
+ "13.05.01": [
+  {
+   "Code": "13.05.01",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "rifiuti solidi delle camere a sabbia e di prodotti di separazione olio/acqua"
+  }
+ ],
+ "13.05.02": [
+  {
+   "Code": "13.05.02",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "fanghi di prodotti di separazione olio/acqua"
+  }
+ ],
+ "13.05.03": [
+  {
+   "Code": "13.05.03",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "fanghi da collettori"
+  }
+ ],
+ "13.05.06": [
+  {
+   "Code": "13.05.06",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "oli prodotti da separatori olio/acqua"
+  }
+ ],
+ "13.05.07": [
+  {
+   "Code": "13.05.07",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "acque oleose prodotte da separatori olio/acqua"
+  }
+ ],
+ "13.05.08": [
+  {
+   "Code": "13.05.08",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "miscugli di rifiuti prodotti da camere a sabbia e separatori olio/acqua"
+  }
+ ],
+ "13.07.01": [
+  {
+   "Code": "13.07.01",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "olio combustibile e carburante diesel"
+  }
+ ],
+ "13.07.03": [
+  {
+   "Code": "13.07.03",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "altri carburanti(comprese le miscele)"
+  }
+ ],
+ "13.08.02": [
+  {
+   "Code": "13.08.02",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "altre emulsioni"
+  }
+ ],
+ "13.08.99": [
+  {
+   "Code": "13.08.99",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "rifiuti non specificati altrimenti"
+  }
+ ],
+ "14.06.01": [
+  {
+   "Code": "14.06.01",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "clorofluorocarburi, HCFC, HFC1"
+  }
+ ],
+ "14.06.02": [
+  {
+   "Code": "14.06.02",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "altri solventi e miscele di solventi, alogenati"
+  }
+ ],
+ "14.06.03": [
+  {
+   "Code": "14.06.03",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "altri solventi e miscele di solventi"
+  }
+ ],
+ "14.06.04": [
+  {
+   "Code": "14.06.04",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "fanghi o rifiuti solidi, contenenti solventi alogenati"
+  }
+ ],
+ "14.06.05": [
+  {
+   "Code": "14.06.05",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "fanghi o rifiuti solidi, contenenti altri solventi"
+  }
+ ],
+ "15.01.01": [
+  {
+   "Code": "15.01.01",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "imballaggi in carta e cartone"
+  }
+ ],
+ "15.01.02": [
+  {
+   "Code": "15.01.02",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "imballaggi in plastica"
+  }
+ ],
+ "15.01.03": [
+  {
+   "Code": "15.01.03",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "imballaggi in legno"
+  }
+ ],
+ "15.01.04": [
+  {
+   "Code": "15.01.04",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "imballaggi metallici"
+  }
+ ],
+ "15.01.05": [
+  {
+   "Code": "15.01.05",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R4,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "imballaggi compositi"
+  }
+ ],
+ "15.01.06": [
+  {
+   "Code": "15.01.06",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R4,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "imballaggi di materiali misti"
+  }
+ ],
+ "15.01.07": [
+  {
+   "Code": "15.01.07",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "imballaggi in vetro"
+  }
+ ],
+ "15.01.09": [
+  {
+   "Code": "15.01.09",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "imballaggi in materia tessile"
+  }
+ ],
+ "15.01.10": [
+  {
+   "Code": "15.01.10",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "imballaggi contenenti residui di sostanze pericolose o contaminati da tali sostanze"
+  }
+ ],
+ "15.01.11": [
+  {
+   "Code": "15.01.11",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "imballaggi metallici contenenti matrici solide porose pericolose (ad esempio amianto), compresi i contenitori a pressione vuoti"
+  }
+ ],
+ "15.02.02": [
+  {
+   "Code": "15.02.02",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "assorbenti, materiali filtranti (inclusi i filtri dell'olio non specificati altrimenti), stracci e indumenti protettivi, contaminati da sostanze pericolose"
+  }
+ ],
+ "15.02.03": [
+  {
+   "Code": "15.02.03",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "assorbenti, materiali filtranti, stracci e indumenti protettivi, diversi da quelli di cui alla voce 15 02 02"
+  }
+ ],
+ "16.01.03": [
+  {
+   "Code": "16.01.03",
+   "Smaltisce": 1,
+   "Operazioni": "R13",
+   "Pericoloso": 0,
+   "Descrizione": "pneumatici fuori uso"
+  }
+ ],
+ "16.01.07": [
+  {
+   "Code": "16.01.07",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "filtri dell'olio"
+  }
+ ],
+ "16.01.11": [
+  {
+   "Code": "16.01.11",
+   "Smaltisce": 1,
+   "Operazioni": "D15",
+   "Pericoloso": 1,
+   "Descrizione": "pastiglie per freni, contenenti amianto"
+  }
+ ],
+ "16.01.12": [
+  {
+   "Code": "16.01.12",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "pastiglie per freni, diverse da quelle di cui alla voce 16 01 11"
+  }
+ ],
+ "16.01.13": [
+  {
+   "Code": "16.01.13",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "liquidi per freni"
+  }
+ ],
+ "16.01.14": [
+  {
+   "Code": "16.01.14",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "liquidi antigelo contenenti sostanze pericolose"
+  }
+ ],
+ "16.01.15": [
+  {
+   "Code": "16.01.15",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "liquidi antigelo, diversi da quelli di cui alla voce 16 01 14"
+  }
+ ],
+ "16.01.17": [
+  {
+   "Code": "16.01.17",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "metalli ferrosi"
+  }
+ ],
+ "16.01.18": [
+  {
+   "Code": "16.01.18",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "metalli non ferrosi"
+  }
+ ],
+ "16.01.19": [
+  {
+   "Code": "16.01.19",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "plastica"
+  }
+ ],
+ "16.01.20": [
+  {
+   "Code": "16.01.20",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "vetro"
+  }
+ ],
+ "16.02.13": [
+  {
+   "Code": "16.02.13",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R4,R12,R13",
+   "Pericoloso": 1,
+   "Descrizione": "apparecchiature fuori uso, contenenti componenti pericolosi diversi da quelli di cui alle voci 16 02 09 e 16 02 12"
+  }
+ ],
+ "16.02.14": [
+  {
+   "Code": "16.02.14",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R4,R12,R13",
+   "Pericoloso": 0,
+   "Descrizione": "apparecchiature fuori uso, diverse da quelli di cui alle voci da  16 02 09 a 16 02 13"
+  }
+ ],
+ "16.02.15": [
+  {
+   "Code": "16.02.15",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R4,R12,R13",
+   "Pericoloso": 1,
+   "Descrizione": "componenti pericolosi rimossi da apparecchiature fuori uso"
+  }
+ ],
+ "16.02.16": [
+  {
+   "Code": "16.02.16",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R4,R12,R13",
+   "Pericoloso": 0,
+   "Descrizione": "componenti rimossi da apparecchiature fuori uso, diversi da quelli di cui alla voce 16 02 15"
+  }
+ ],
+ "16.03.05": [
+  {
+   "Code": "16.03.05",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "rifiuti organici, contenenti sostanze pericolose"
+  }
+ ],
+ "16.03.06": [
+  {
+   "Code": "16.03.06",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti organici, diversi da quelli di cui alla voce 16 03 05"
+  }
+ ],
+ "16.05.04": [
+  {
+   "Code": "16.05.04",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R12,R13,D13,D14",
+   "Pericoloso": 1,
+   "Descrizione": "gas in contenitori a pressione (compresi gli halon), contenenti sostanze pericolose"
+  }
+ ],
+ "16.05.05": [
+  {
+   "Code": "16.05.05",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R12,R13,D13,D14",
+   "Pericoloso": 0,
+   "Descrizione": "gas in contenitori a pressione, diversi da quelli di cui alla voce 16 05 04"
+  }
+ ],
+ "16.05.06": [
+  {
+   "Code": "16.05.06",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "sostanze chimiche di laboratorio contenenti o costituite da sostanze pericolose, comprese le miscele di sostanze chimiche di laboratorio"
+  }
+ ],
+ "16.05.07": [
+  {
+   "Code": "16.05.07",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "sostanze chimiche inorganiche di scarto contenenti o costituite da sostanze pericolose"
+  }
+ ],
+ "16.05.08": [
+  {
+   "Code": "16.05.08",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "sostanze chimiche organiche di scarto contenenti o costituite da sostanze pericolose"
+  }
+ ],
+ "16.06.01": [
+  {
+   "Code": "16.06.01",
+   "Smaltisce": 1,
+   "Operazioni": "R13",
+   "Pericoloso": 1,
+   "Descrizione": "batterie al piombo"
+  }
+ ],
+ "16.06.02": [
+  {
+   "Code": "16.06.02",
+   "Smaltisce": 1,
+   "Operazioni": "R13",
+   "Pericoloso": 1,
+   "Descrizione": "batterie al nichel-cadmio"
+  }
+ ],
+ "16.06.03": [
+  {
+   "Code": "16.06.03",
+   "Smaltisce": 1,
+   "Operazioni": "R13",
+   "Pericoloso": 1,
+   "Descrizione": "batterie contenenti mercurio"
+  }
+ ],
+ "16.06.04": [
+  {
+   "Code": "16.06.04",
+   "Smaltisce": 1,
+   "Operazioni": "R13",
+   "Pericoloso": 0,
+   "Descrizione": "batterie alcaline (tranne 16 06 03)"
+  }
+ ],
+ "16.06.05": [
+  {
+   "Code": "16.06.05",
+   "Smaltisce": 1,
+   "Operazioni": "R13",
+   "Pericoloso": 0,
+   "Descrizione": "altre batteria e accumulatori"
+  }
+ ],
+ "16.07.08": [
+  {
+   "Code": "16.07.08",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "rifiuti contenenti olio"
+  }
+ ],
+ "16.07.09": [
+  {
+   "Code": "16.07.09",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "rifiuti contenenti altre sostanze pericolose"
+  }
+ ],
+ "16.10.01": [
+  {
+   "Code": "16.10.01",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "rifiuti liquidi acquosi, contenenti sostanze pericolose"
+  }
+ ],
+ "16.10.02": [
+  {
+   "Code": "16.10.02",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti liquidi acquosi, diversi da quelli di cui alla voce 16 10 01"
+  }
+ ],
+ "16.11.06": [
+  {
+   "Code": "16.11.06",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rivestimenti e materiali refrattari provenienti da lavorazioni non metallurgiche, diversi da quelli di cui alla voce 16 11 05"
+  }
+ ],
+ "17.01.01": [
+  {
+   "Code": "17.01.01",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "cemento"
+  }
+ ],
+ "17.01.02": [
+  {
+   "Code": "17.01.02",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "mattoni"
+  }
+ ],
+ "17.01.03": [
+  {
+   "Code": "17.01.03",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "mattonelle e ceramiche"
+  }
+ ],
+ "17.01.06": [
+  {
+   "Code": "17.01.06",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "miscugli o frazioni separate di cemento, mattoni e mattonelle e ceramiche, contenenti sostanze pericolose"
+  }
+ ],
+ "17.01.07": [
+  {
+   "Code": "17.01.07",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "miscugli di cemento, mattoni, mattonelle e ceramiche, diversi da quelli di cui alla voce 17 01 06"
+  }
+ ],
+ "17.02.01": [
+  {
+   "Code": "17.02.01",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "legno"
+  }
+ ],
+ "17.02.02": [
+  {
+   "Code": "17.02.02",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "vetro"
+  }
+ ],
+ "17.02.03": [
+  {
+   "Code": "17.02.03",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "plastica"
+  }
+ ],
+ "17.02.04": [
+  {
+   "Code": "17.02.04",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R4,R13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "vetro, plastica e legno, contenenti sostanze pericolose o da essi contaminati"
+  }
+ ],
+ "17.03.01": [
+  {
+   "Code": "17.03.01",
+   "Smaltisce": 1,
+   "Operazioni": "D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "miscele bituminose contenenti catrame di carbone"
+  }
+ ],
+ "17.03.02": [
+  {
+   "Code": "17.03.02",
+   "Smaltisce": 1,
+   "Operazioni": "D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "miscele bituminose, diverse da quelle di cui alla voce 17 03 01"
+  }
+ ],
+ "17.04.01": [
+  {
+   "Code": "17.04.01",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rame, bronzo, ottone"
+  }
+ ],
+ "17.04.02": [
+  {
+   "Code": "17.04.02",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "alluminio"
+  }
+ ],
+ "17.04.03": [
+  {
+   "Code": "17.04.03",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "piombo"
+  }
+ ],
+ "17.04.05": [
+  {
+   "Code": "17.04.05",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "ferro e acciaio"
+  }
+ ],
+ "17.04.07": [
+  {
+   "Code": "17.04.07",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "metalli misti"
+  }
+ ],
+ "17.04.09": [
+  {
+   "Code": "17.04.09",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "rifiuti metallici contaminati da sostanze pericolose"
+  }
+ ],
+ "17.04.10": [
+  {
+   "Code": "17.04.10",
+   "Smaltisce": 1,
+   "Operazioni": "R3.R4,R13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "cavi, impregnati di olio, di catrame, di carbone o di altre sostanze pericolose"
+  }
+ ],
+ "17.04.11": [
+  {
+   "Code": "17.04.11",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R4,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "cavi, diversi da quelli di cui alla voce 17 04 10"
+  }
+ ],
+ "17.05.03": [
+  {
+   "Code": "17.05.03",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "terre e rocce da scavo, contenenti sostanze pericolose"
+  }
+ ],
+ "17.05.04": [
+  {
+   "Code": "17.05.04",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "terre e rocce da scavo, diverse da quelle di cui alla voce 17 05 03"
+  }
+ ],
+ "17.05.06": [
+  {
+   "Code": "17.05.06",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 0,
+   "Descrizione": "fanghi di dragaggio, diversa da quella di cui alla voce 17 05 05"
+  }
+ ],
+ "17.06.01": [
+  {
+   "Code": "17.06.01",
+   "Smaltisce": 1,
+   "Operazioni": "D15",
+   "Pericoloso": 1,
+   "Descrizione": "materiali isolanti contenenti amianto"
+  }
+ ],
+ "17.06.03": [
+  {
+   "Code": "17.06.03",
+   "Smaltisce": 1,
+   "Operazioni": "D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "altri materiali isolanti contenenti o costituiti da sostanze pericolose"
+  }
+ ],
+ "17.06.04": [
+  {
+   "Code": "17.06.04",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "materiali isolanti diversi da quelli di cui alle voci 17 06 01 e 17 06 03"
+  }
+ ],
+ "17.06.05": [
+  {
+   "Code": "17.06.05",
+   "Smaltisce": 1,
+   "Operazioni": "D15",
+   "Pericoloso": 1,
+   "Descrizione": "materiali da costruzione contenenti amianto"
+  }
+ ],
+ "17.08.02": [
+  {
+   "Code": "17.08.02",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "materiali da costruzione a base di gesso diversi da quelli di cui alla voce 17 08 01"
+  }
+ ],
+ "17.09.03": [
+  {
+   "Code": "17.09.03",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "altri rifiuti dell'attivit&agrave di costruzione e demolizione(compresi rifiuti misti) contenenti sostanze pericolose"
+  }
+ ],
+ "17.09.04": [
+  {
+   "Code": "17.09.04",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "altri rifiuti dell'attivit&agrave di costruzione e demolizione, diversi da quelli di cui alle voci 17 09 01, 17 09 02 e 17 09 03"
+  }
+ ],
+ "18.01.01": [
+  {
+   "Code": "18.01.01",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 0,
+   "Descrizione": "oggetti da taglio (eccetto 18 01 03)"
+  }
+ ],
+ "18.01.03": [
+  {
+   "Code": "18.01.03",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "rifiuti che devono essere raccolti e smaltiti applicando precauzioni particolari per evitare infezioni"
+  }
+ ],
+ "18.01.04": [
+  {
+   "Code": "18.01.04",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti che non devono essere raccolti e smaltiti applicando precauzioni particolari per evitare infezioni(es. bende, ingessature)"
+  }
+ ],
+ "18.01.06": [
+  {
+   "Code": "18.01.06",
+   "Smaltisce": 1,
+   "Operazioni": "D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "sostanze chimiche pericolose o contenenti sostanze pericolose"
+  }
+ ],
+ "18.01.08": [
+  {
+   "Code": "18.01.08",
+   "Smaltisce": 1,
+   "Operazioni": "D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "medicinali citotossici e citostatici"
+  }
+ ],
+ "18.01.09": [
+  {
+   "Code": "18.01.09",
+   "Smaltisce": 1,
+   "Operazioni": "D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "medicinali diversi da quelli di cui alla voce 18 01 08"
+  }
+ ],
+ "18.02.02": [
+  {
+   "Code": "18.02.02",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "rifiuti che devono essere raccolti e smaltiti applicando precauzioni particolari per evitare infezioni"
+  }
+ ],
+ "19.02.05": [
+  {
+   "Code": "19.02.05",
+   "Smaltisce": 1,
+   "Operazioni": "D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "fanghi prodotti da trattamenti chimico-fisici, contenenti sostanze pericolose"
+  }
+ ],
+ "19.02.06": [
+  {
+   "Code": "19.02.06",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "fanghi prodotti da trattamenti chimico-fisici, diversi da quelli di cui alla voce 19 02 05"
+  }
+ ],
+ "19.08.01": [
+  {
+   "Code": "19.08.01",
+   "Smaltisce": 1,
+   "Operazioni": "D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "residui di vagliatura"
+  }
+ ],
+ "19.08.02": [
+  {
+   "Code": "19.08.02",
+   "Smaltisce": 1,
+   "Operazioni": "D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti da dissabbiamento"
+  }
+ ],
+ "19.08.05": [
+  {
+   "Code": "19.08.05",
+   "Smaltisce": 1,
+   "Operazioni": "D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "fanghi prodotti dal trattamento delle acque reflue urbane"
+  }
+ ],
+ "19.08.09": [
+  {
+   "Code": "19.08.09",
+   "Smaltisce": 1,
+   "Operazioni": "D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "miscele di oli e grassi prodotte dalla separazione olio/acqua, contenenti esclusivamente oli e grassi commestibili"
+  }
+ ],
+ "19.08.10": [
+  {
+   "Code": "19.08.10",
+   "Smaltisce": 1,
+   "Operazioni": "D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "miscele di oli e grassi prodotte dalla separazione olio/acqua, diverse da quelle di cui alla voce 19 08 09"
+  }
+ ],
+ "19.08.14": [
+  {
+   "Code": "19.08.14",
+   "Smaltisce": 1,
+   "Operazioni": "D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "fanghi prodotti da altri trattamenti delle acque reflue industriali, diversi da quelli di cui alla voce 19 08 13"
+  }
+ ],
+ "19.09.02": [
+  {
+   "Code": "19.09.02",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "fanghi prodotti dai processi di chiarificazione dell'acqua"
+  }
+ ],
+ "19.12.01": [
+  {
+   "Code": "19.12.01",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "carta e cartone"
+  }
+ ],
+ "19.12.02": [
+  {
+   "Code": "19.12.02",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "metalli ferrosi"
+  }
+ ],
+ "19.12.03": [
+  {
+   "Code": "19.12.03",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "metalli non ferrosi"
+  }
+ ],
+ "19.12.04": [
+  {
+   "Code": "19.12.04",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "plastica e gomma"
+  }
+ ],
+ "19.12.05": [
+  {
+   "Code": "19.12.05",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "vetro"
+  }
+ ],
+ "19.12.07": [
+  {
+   "Code": "19.12.07",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "legno diverso da quello di cui alla voce 19 12 06"
+  }
+ ],
+ "19.12.10": [
+  {
+   "Code": "19.12.10",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti combustibili (combustibile da rifiuti)"
+  }
+ ],
+ "19.12.12": [
+  {
+   "Code": "19.12.12",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 0,
+   "Descrizione": "altri rifiuti (compresi materiali misti) prodotti dal trattamento meccanico dei rifiuti, diversi da quelli di cui alla voce 19 12 11"
+  }
+ ],
+ "19.13.02": [
+  {
+   "Code": "19.13.02",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti solidi prodotti dalle operazioni di bonifica dei terreni, diversi da quelli di cui alla voce 19 13 01"
+  }
+ ],
+ "20.01.01": [
+  {
+   "Code": "20.01.01",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13",
+   "Pericoloso": 0,
+   "Descrizione": "carta e cartone"
+  }
+ ],
+ "20.01.02": [
+  {
+   "Code": "20.01.02",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D13",
+   "Pericoloso": 0,
+   "Descrizione": "vetro"
+  }
+ ],
+ "20.01.08": [
+  {
+   "Code": "20.01.08",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti biodegradabili di cucine e mense"
+  }
+ ],
+ "20.01.10": [
+  {
+   "Code": "20.01.10",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "abbigliamento"
+  }
+ ],
+ "20.01.11": [
+  {
+   "Code": "20.01.11",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "prodotti tessili"
+  }
+ ],
+ "20.01.13": [
+  {
+   "Code": "20.01.13",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "solventi"
+  }
+ ],
+ "20.01.14": [
+  {
+   "Code": "20.01.14",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "acidi"
+  }
+ ],
+ "20.01.15": [
+  {
+   "Code": "20.01.15",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "sostanze alcaline"
+  }
+ ],
+ "20.01.17": [
+  {
+   "Code": "20.01.17",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "prodotti fotochimici"
+  }
+ ],
+ "20.01.19": [
+  {
+   "Code": "20.01.19",
+   "Smaltisce": 1,
+   "Operazioni": "D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "pesticidi"
+  }
+ ],
+ "20.01.21": [
+  {
+   "Code": "20.01.21",
+   "Smaltisce": 1,
+   "Operazioni": "R13",
+   "Pericoloso": 1,
+   "Descrizione": "tubi fluorescenti ed altri rifiuti contenenti mercurio"
+  }
+ ],
+ "20.01.23": [
+  {
+   "Code": "20.01.23",
+   "Smaltisce": 1,
+   "Operazioni": "R13",
+   "Pericoloso": 1,
+   "Descrizione": "apparecchiature fuori uso contenenti clorofluorocarburi"
+  }
+ ],
+ "20.01.25": [
+  {
+   "Code": "20.01.25",
+   "Smaltisce": 1,
+   "Operazioni": "R13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "oli e grassi commestibili"
+  }
+ ],
+ "20.01.26": [
+  {
+   "Code": "20.01.26",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 1,
+   "Descrizione": "oli e grassi diversi da quelli di cui alla voce 20 01 25"
+  }
+ ],
+ "20.01.27": [
+  {
+   "Code": "20.01.27",
+   "Smaltisce": 1,
+   "Operazioni": "D13,D14,D15",
+   "Pericoloso": 1,
+   "Descrizione": "vernici, inchiostri, adesivi e resine contenenti sostanze pericolose"
+  }
+ ],
+ "20.01.28": [
+  {
+   "Code": "20.01.28",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "vernici, inchiostri, adesivi e resine, diverse da quelle di cui alla voce 20 01 27"
+  }
+ ],
+ "20.01.32": [
+  {
+   "Code": "20.01.32",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "medicinali diversi da quelli di cui alla voce 20 01 31"
+  }
+ ],
+ "20.01.33": [
+  {
+   "Code": "20.01.33",
+   "Smaltisce": 1,
+   "Operazioni": "R13",
+   "Pericoloso": 1,
+   "Descrizione": "batterie e accumulatori di cui alle voci 16 06 01, 16 06,02 e 16 06 03 nonch&eacute; batterie e accumulatori non suddivisi, contenenti tali batterie"
+  }
+ ],
+ "20.01.34": [
+  {
+   "Code": "20.01.34",
+   "Smaltisce": 1,
+   "Operazioni": "R13",
+   "Pericoloso": 0,
+   "Descrizione": "batterie e accumulatori diversi da quelli di cui alla voce 20 01 33"
+  }
+ ],
+ "20.01.35": [
+  {
+   "Code": "20.01.35",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R4,R12,R13",
+   "Pericoloso": 1,
+   "Descrizione": "apparecchiature elettriche ed elettroniche fuori uso, diverse da quelle di cui alla voce 20 01 21 e 20 01 23, contenenti componenti pericolosi"
+  }
+ ],
+ "20.01.36": [
+  {
+   "Code": "20.01.36",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R4,R12,R13",
+   "Pericoloso": 0,
+   "Descrizione": "apparecchiature elettriche ed elettroniche fuori uso, diverse da quelle di cui alla voci 20 01 21, 20 01 23 e 20 01 35"
+  }
+ ],
+ "20.01.38": [
+  {
+   "Code": "20.01.38",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13",
+   "Pericoloso": 0,
+   "Descrizione": "legno, diverso da quello di cui alla voce 20 01 37"
+  }
+ ],
+ "20.01.39": [
+  {
+   "Code": "20.01.39",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R12,R13,D13",
+   "Pericoloso": 0,
+   "Descrizione": "plastica"
+  }
+ ],
+ "20.01.40": [
+  {
+   "Code": "20.01.40",
+   "Smaltisce": 1,
+   "Operazioni": "R4,R13",
+   "Pericoloso": 0,
+   "Descrizione": "metalli"
+  }
+ ],
+ "20.02.01": [
+  {
+   "Code": "20.02.01",
+   "Smaltisce": 1,
+   "Operazioni": "R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti biodegradabili"
+  }
+ ],
+ "20.03.01": [
+  {
+   "Code": "20.03.01",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti urbani non differenziati"
+  }
+ ],
+ "20.03.03": [
+  {
+   "Code": "20.03.03",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 0,
+   "Descrizione": "residui della pulizia stradale"
+  }
+ ],
+ "20.03.04": [
+  {
+   "Code": "20.03.04",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 0,
+   "Descrizione": "fanghi delle fosse settiche"
+  }
+ ],
+ "20.03.06": [
+  {
+   "Code": "20.03.06",
+   "Smaltisce": 0,
+   "Operazioni": "",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti prodotti dalla pulizia delle acque di scarico"
+  }
+ ],
+ "20.03.07": [
+  {
+   "Code": "20.03.07",
+   "Smaltisce": 1,
+   "Operazioni": "R3,R4,R12,R13,D13,D14,D15",
+   "Pericoloso": 0,
+   "Descrizione": "rifiuti ingombranti"
+  }
+ ]
+}
